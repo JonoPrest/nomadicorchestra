@@ -1,0 +1,15 @@
+.GigDatesBackground {
+  background-image: url("./GigDatesBackground.jpg");
+  background-size: cover;
+  height: 100%;
+  
+  	
+    
+}
+
+.stretchDiv {
+    position: absolute;
+    top: 40px; /* Header Height */
+    bottom: 20px; /* Footer Height */
+    width: 100%;
+}

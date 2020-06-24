@@ -1,0 +1,59 @@
+
+
+.background {
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center center;
+  position:absolute;
+    top: 0px; /* Header Height */
+    bottom: 0px; /* Footer Height */
+    width: 100%;
+    
+}
+
+.allNav {
+	margin-left: 10%;
+	
+}
+
+.logo {
+	display: flex;
+	margin-top: 20px;
+	margin-right: 60px;
+	width: 60%;
+	max-width: 800px;
+	min-width: 500px;
+	
+}
+
+.nav {
+	width: 60%;
+	max-width: 900px;
+	min-width: 500px;
+}
+
+/*check app css for sizing*/
+.navButton {
+
+	background-color: rgba(242, 242, 242, 0.6);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+    width: 100%;
+}
+
+.social {
+	margin-bottom: 10px;
+	width: 50%;
+	max-width: 550px;
+	margin-left: 22%;
+}
+
+@media only screen and (max-width: 600px) {
+    .allNav {
+        margin-left: 0px;
+        
+    }
+}

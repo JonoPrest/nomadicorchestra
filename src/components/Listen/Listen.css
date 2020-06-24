@@ -1,0 +1,15 @@
+.listenWrapper {
+	display: flex;
+	max-width: 70%;
+}
+
+.gridLayout {
+	display: grid;
+	grid-template-columns: 50% 50%;
+
+  	/*grid-template-rows: 20% 20% 20% 20% 20%;*/
+}
+
+.albumCard {
+	background-color: rgba(242, 242, 242, 0.6);
+}
