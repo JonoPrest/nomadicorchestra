@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nomadicorchestra/precache-manifest.c436194053aa4dd36670da12af427d06.js"
+  "/nomadicorchestra/precache-manifest.f2e2b470aa525da63502f06646d762fe.js"
 );
 
 self.addEventListener('message', (event) => {

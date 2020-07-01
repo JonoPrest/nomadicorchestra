@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/nomadicorchestra/static/css/main.2de82ddf.chunk.css",
-    "main.js": "/nomadicorchestra/static/js/main.ed37945f.chunk.js",
-    "main.js.map": "/nomadicorchestra/static/js/main.ed37945f.chunk.js.map",
+    "main.css": "/nomadicorchestra/static/css/main.a5f4f7db.chunk.css",
+    "main.js": "/nomadicorchestra/static/js/main.d27b402d.chunk.js",
+    "main.js.map": "/nomadicorchestra/static/js/main.d27b402d.chunk.js.map",
     "runtime-main.js": "/nomadicorchestra/static/js/runtime-main.c5a04bf9.js",
     "runtime-main.js.map": "/nomadicorchestra/static/js/runtime-main.c5a04bf9.js.map",
     "static/css/2.193133a3.chunk.css": "/nomadicorchestra/static/css/2.193133a3.chunk.css",
-    "static/js/2.ae373fe2.chunk.js": "/nomadicorchestra/static/js/2.ae373fe2.chunk.js",
-    "static/js/2.ae373fe2.chunk.js.map": "/nomadicorchestra/static/js/2.ae373fe2.chunk.js.map",
+    "static/js/2.1bb1c2fa.chunk.js": "/nomadicorchestra/static/js/2.1bb1c2fa.chunk.js",
+    "static/js/2.1bb1c2fa.chunk.js.map": "/nomadicorchestra/static/js/2.1bb1c2fa.chunk.js.map",
     "index.html": "/nomadicorchestra/index.html",
-    "precache-manifest.c436194053aa4dd36670da12af427d06.js": "/nomadicorchestra/precache-manifest.c436194053aa4dd36670da12af427d06.js",
+    "precache-manifest.f2e2b470aa525da63502f06646d762fe.js": "/nomadicorchestra/precache-manifest.f2e2b470aa525da63502f06646d762fe.js",
     "service-worker.js": "/nomadicorchestra/service-worker.js",
     "static/css/2.193133a3.chunk.css.map": "/nomadicorchestra/static/css/2.193133a3.chunk.css.map",
-    "static/css/main.2de82ddf.chunk.css.map": "/nomadicorchestra/static/css/main.2de82ddf.chunk.css.map",
-    "static/js/2.ae373fe2.chunk.js.LICENSE.txt": "/nomadicorchestra/static/js/2.ae373fe2.chunk.js.LICENSE.txt",
-    "static/media/GigDates.css": "/nomadicorchestra/static/media/GigDatesBackground.3da9a0ca.jpg",
+    "static/css/main.a5f4f7db.chunk.css.map": "/nomadicorchestra/static/css/main.a5f4f7db.chunk.css.map",
+    "static/js/2.1bb1c2fa.chunk.js.LICENSE.txt": "/nomadicorchestra/static/js/2.1bb1c2fa.chunk.js.LICENSE.txt",
     "static/media/ListenOnAppleMusicT.png": "/nomadicorchestra/static/media/ListenOnAppleMusicT.75746df7.png",
     "static/media/ListenOnSpotifyT.png": "/nomadicorchestra/static/media/ListenOnSpotifyT.48135902.png",
     "static/media/LoveAtLast.jpg": "/nomadicorchestra/static/media/LoveAtLast.eaa43b02.jpg",
@@ -28,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.c5a04bf9.js",
     "static/css/2.193133a3.chunk.css",
-    "static/js/2.ae373fe2.chunk.js",
-    "static/css/main.2de82ddf.chunk.css",
-    "static/js/main.ed37945f.chunk.js"
+    "static/js/2.1bb1c2fa.chunk.js",
+    "static/css/main.a5f4f7db.chunk.css",
+    "static/js/main.d27b402d.chunk.js"
   ]
 }
