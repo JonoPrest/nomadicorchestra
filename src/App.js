@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Home from './components/Home/Home';
-import GigDates from './components/GigDates/GigDates';
-import About from './components/About/About';
 import Tabletop from 'tabletop';
 import './App.css';
 
@@ -10,7 +8,8 @@ class App extends Component {
     super()
     this.state = {
       data: [{}],
-      route: "homePage"
+      route: "homePage",
+      upcomingGigs: 0
     } 
   }
 
@@ -26,6 +25,11 @@ class App extends Component {
     })
   }
 
+  calculateUpcomingGigs = () => {
+    const currentGigs = this.state.upcomingGigs;
+    
+  }
+
   onRouteChange = (route) => {
     this.setState({route: route});
     console.log(route);
@@ -34,18 +38,11 @@ class App extends Component {
 
   render() {
 
-    let page;
-    if (this.state.route === "homePage" || this.state.route === "listenPage" || this.state.route === "aboutPage") {
-         page = <Home  route={this.state.route} onRouteChange={this.onRouteChange} gigData={this.state.data}/>;
-        } else if (this.state.route === "gigDatesPage") {
-            page = <GigDates googleData={this.state.data} onRouteChange={this.onRouteChange}/>;
-        } else {
-            page = <About gigData={this.state.data} onRouteChange={this.onRouteChange}/>;
-        }
+    
 
     return (
     <div className="App">
-      {page}
+      <Home  route={this.state.route} onRouteChange={this.onRouteChange} googleData={this.state.data} gigData={this.state.data} upcomingGigs={this.state.upcomingGigs}/>;
     </div>
   );
   }

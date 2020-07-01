@@ -1,28 +1,70 @@
 import React from 'react';
 import fullLogo from './fullLogo1.png';
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 import About from '../About/About';
 import Listen from '../Listen/Listen';
+import Contact from '../Contact/Contact';
+import GigDates from '../GigDates/GigDates'
 import { SocialIcon } from 'tachyons-react-social-icons';
 
 
 import './home.css';
 
-const Home = ({ onRouteChange, gigData, route }) => {
+const Home = ({ onRouteChange, gigData, route, upcomingGigs, googleData }) => {
+	
+const url = "//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn";
+ 
+
 return (
 	<div>
+
 		<div className='background'>
+			
+				
+		
 			<div className="allNav flex flex-wrap items-center">
-				<img className='animate__animated animate__bounce logo' src={fullLogo} alt=''/>
-				<div className="nav flex flex-wrap justify-around ph3 mt1">
-				  <a className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black" onClick={() => onRouteChange('aboutPage')} href="#0">About</a>
-				  <a className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black" onClick={() => onRouteChange('listenPage')} href="#0">Listen</a>
-				  <a className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black" href="#0">Contact</a>
-				  {gigData.length > 1 && <a onClick={() => onRouteChange('gigDatesPage')} className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black" href="#0">Gig Dates</a>}
+				{route==='homePage' && <img className='animate__animated animate__bounce logo' src={fullLogo} alt=''/>}
+				<div className="nav flex flex-wrap justify-between ph3 mt1">
+					{route != 'homePage' 
+					&& <a onClick={() => onRouteChange('homePage')} 
+					className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black" 
+					href="#0"
+					>Home</a>}
+
+				  	{route != 'aboutPage' 
+				  	&& <a 
+				  	className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black" 
+				  	onClick={() => onRouteChange('aboutPage')} 
+				  	href="#0"
+				  	>About</a>}
+				  	
+				  	{route != 'listenPage' 
+				  	&& <a className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black" 
+				  	onClick={() => onRouteChange('listenPage')} 
+				  	href="#0"
+				  	>Listen</a>}
+				  	
+				  	{route != 'contactPage' 
+				  	&& <a onClick={() => onRouteChange('contactPage')} 
+				  	className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black" 
+				  	href="#0"
+				  	>Contact</a>}
+				  	
+				  	{route != 'gigDatesPage' 
+				  	&& <a onClick={() => onRouteChange('gigDatesPage')} 
+				  	className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black" 
+				  	href="#0"
+				  	>Gig Dates</a>}
+
 				</div>
 			</div>
+
+	
 			
+			{route === 'contactPage' && <Contact/>}
 			{route === 'listenPage' && <Listen/>}
 			{route === 'aboutPage' && <About/>}
+			{route === 'gigDatesPage' && <GigDates googleData={googleData}/>}
 
 			<footer className='footer'>
 				<div className='social flex justify-between'>

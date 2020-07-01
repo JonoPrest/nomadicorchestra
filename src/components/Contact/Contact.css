@@ -1,0 +1,15 @@
+.formContainer {
+	width: 100%;
+
+
+}
+
+form {
+	max-width: 50rem;
+}
+
+textarea {
+	resize: none;
+	width: 100%;
+	height: 20rem;
+}

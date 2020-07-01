@@ -11,8 +11,25 @@
     
 }
 
+.backgroundOverlay {
+  background-color: rgba(242, 242, 242, 0.5);
+  position: absolute;
+  top: 0px; /* Header Height */
+  bottom: 0px; /* Footer Height */
+  width: 100%;
+
+}
+
+/*.mailchimp {
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}*/
+
 .allNav {
 	margin-left: 10%;
+	position: relative;
 	
 }
 
@@ -36,12 +53,31 @@
 .navButton {
 
 	background-color: rgba(242, 242, 242, 0.6);
+  z-index: +1;
 }
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  top: 60px;
+/*  left: 10%;*/
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 
 footer {
   position: fixed;
   bottom: 0;
-    width: 100%;
+  width: 100%;
 }
 
 .social {
@@ -55,5 +91,8 @@ footer {
     .allNav {
         margin-left: 0px;
         
+    }
+    .contentContainer {
+    	left: 0;
     }
 }

@@ -4,19 +4,13 @@ import NomadsLogo from './NomadsLogoTransparent2.png';
 import './GigDates.css';
 // import { robots } from './robots'
 
-const GigDates = ({ googleData, onRouteChange }) => {
+const GigDates = ({ googleData, onRouteChange, upcomingGigs }) => {
 
 	
 	return (
-			<div className='GigDatesBackground'>
-				<div className="flex justify-around">
-					<div className="nav flex flex-wrap justify-around ph3 mt3">
-					<a onClick={() => onRouteChange('homePage')} className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 bg-near-black white b--near-black" href="#0">Home</a>
-					  <a onClick={() => onRouteChange('aboutPage')} className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib bg-near-black white b--near-black" href="#0">About</a>
-					  <a className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib bg-near-black white b--near-black" onClick={() => onRouteChange('listenPage')} href="#0">Listen</a>
-					  <a className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib bg-near-black white b--near-black" href="#0">Contact</a>
-					</div>
-				</div>
+			<div className= 'backgroundOverlay'>
+			<div className='contentContainer'>
+				
 				<div className='flex flex-wrap justify-around'>
 					{
 						googleData.map((user, i) => {
@@ -28,6 +22,7 @@ const GigDates = ({ googleData, onRouteChange }) => {
 
 
 							if (todayTime <= eventDateTime) {
+								upcomingGigs += 1;
 								return (
 
 								<GigDatesCard 
@@ -45,6 +40,8 @@ const GigDates = ({ googleData, onRouteChange }) => {
 					}
 		    	</div>
 	    	</div>
+	    	</div>
+
 
 	);
 };

@@ -1,15 +1,13 @@
-.GigDatesBackground {
-  background-image: url("./GigDatesBackground.jpg");
-  background-size: cover;
-  height: 100%;
-  
-  	
-    
-}
+.GigDates {
+  position: absolute;
+  bottom: 10px;
+  top: 60px;
+  left: 10%;
+  overflow: scroll;
+  overflow-x: hidden;
 
-.stretchDiv {
-    position: absolute;
-    top: 40px; /* Header Height */
-    bottom: 20px; /* Footer Height */
-    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
