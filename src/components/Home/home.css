@@ -1,5 +1,5 @@
 .background {
-  background-image: url('./background.jpg');
+  background-image: url(background-min.jpg);
   background-size: cover;
   background-position: center center;
   position:fixed;
@@ -27,7 +27,8 @@
 
 .allNav {
   margin-left: 10%;
-  position: relative;
+/*  position: relative;
+*/
 }
 
 .logo {
@@ -37,6 +38,7 @@
   width: 60%;
   max-width: 800px;
   min-width: 500px;
+
 }
 
 .nav {
@@ -88,3 +90,21 @@ footer {
     left: 0;
   }
 }
+
+@media all and (orientation: landscape) {
+
+  .logo {
+  
+  
+  min-width: 50px;
+
+}
+
+.nav {
+  
+  min-width: 50px;
+}
+    
+}
+
+

@@ -23,6 +23,38 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Nomadic Orchestra</title>
+    <script type="text/javascript">
+      var swidth = window.screen.width;
+    //These were the values of my website CSS container for portrait and landscape
+    var vpwidth = 500;
+    var vlwidth = 1000;
+
+    updateOrientation();
+
+    window.addEventListener('orientationchange', updateOrientation, false);
+
+    function updateOrientation() {
+
+
+      var viewport = document.querySelector("meta[name=viewport]");
+
+      switch (window.orientation) {
+        case 0: //portrait
+          //set the viewport attributes to whatever you want!
+            viewport.setAttribute('content', 'width='+vpwidth)
+          break;
+        case 90: case -90: //landscape
+          //set the viewport attributes to whatever you want!
+            viewport.setAttribute('content', 'width='+vlwidth)
+          break;
+        default:
+          //set the viewport attributes to whatever you want!
+            viewport.setAttribute('content', 'width='+vpwidth)
+          break;
+      }
+        //alert(swidth + ' lead to an initial width of ' + vpwidth + ' and a rotate width of ' + vlwidth);
+    }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
