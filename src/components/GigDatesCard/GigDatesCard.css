@@ -1,26 +1,20 @@
 .datesBackground {
-	background-color: rgba(42, 42, 42, 0.95);
+  background-color: rgba(42, 42, 42, 0.95);
 }
 
 .cardText {
-	max-width: 32rem;
+  max-width: 32rem;
 }
 
 .cardImage {
-	max-width: 32rem;
+  max-width: 32rem;
 }
-
-
 
 @media screen and (max-width: 80rem) {
   .cardText {
     max-width: 33rem;
-
   }
   .card {
-  	max-width: 30rem;
+    max-width: 30rem;
   }
 }
-
-
-

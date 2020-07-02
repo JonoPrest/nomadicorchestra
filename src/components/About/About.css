@@ -4,30 +4,22 @@
   bottom: 10%;
 }
 
-
-
-
 .youtubeText {
-	max-width: 25rem;
+  max-width: 25rem;
   height: 360px;
   background-color: rgba(42, 42, 42, 0.9);
-
 }
 
 .youtubePlayer {
-    background-color: rgba(42, 42, 42, 0.9);
-
+  background-color: rgba(42, 42, 42, 0.9);
 }
-
 
 @media screen and (max-width: 75rem) {
   .youtubeText {
     max-width: 640px;
     height: auto;
-
   }
   .aboutCard {
-  	max-width: 640px;
+    max-width: 640px;
   }
 }
-

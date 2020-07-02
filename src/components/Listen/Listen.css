@@ -1,31 +1,28 @@
 .listenContainer {
-    width: 60%;
-    min-width: 46rem;
+  width: 60%;
+  min-width: 46rem;
 }
 
 @media only screen and (max-width: 46rem) {
-    .listenContainer {
-        min-width: 30rem;
-        
-    }
+  .listenContainer {
+    min-width: 30rem;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-    .listenWrapper {
-        max-width: 500px;
-        
-    }
+  .listenWrapper {
+    max-width: 500px;
+  }
 }
 
 .gridLayout {
-    display: inline-block;
-/*	display: grid;
+  display: inline-block;
+  /*	display: grid;
 	grid-template-columns: 50% 50%;
 */
-  	/*grid-template-rows: 20% 20% 20% 20% 20%;*/
+  /*grid-template-rows: 20% 20% 20% 20% 20%;*/
 }
 
 .albumCard {
-	background-color: rgba(42, 42, 42, 0.95);
+  background-color: rgba(42, 42, 42, 0.95);
 }
-
