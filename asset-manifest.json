@@ -1,24 +1,21 @@
 {
   "files": {
-    "main.css": "/nomadicorchestra/static/css/main.94f1129f.chunk.css",
-    "main.js": "/nomadicorchestra/static/js/main.0fa12ea7.chunk.js",
-    "main.js.map": "/nomadicorchestra/static/js/main.0fa12ea7.chunk.js.map",
+    "main.css": "/nomadicorchestra/static/css/main.dd31f877.chunk.css",
+    "main.js": "/nomadicorchestra/static/js/main.cb4fdf79.chunk.js",
+    "main.js.map": "/nomadicorchestra/static/js/main.cb4fdf79.chunk.js.map",
     "runtime-main.js": "/nomadicorchestra/static/js/runtime-main.c5a04bf9.js",
     "runtime-main.js.map": "/nomadicorchestra/static/js/runtime-main.c5a04bf9.js.map",
     "static/css/2.193133a3.chunk.css": "/nomadicorchestra/static/css/2.193133a3.chunk.css",
-    "static/js/2.1b72d83d.chunk.js": "/nomadicorchestra/static/js/2.1b72d83d.chunk.js",
-    "static/js/2.1b72d83d.chunk.js.map": "/nomadicorchestra/static/js/2.1b72d83d.chunk.js.map",
+    "static/js/2.ef73c6e3.chunk.js": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js",
+    "static/js/2.ef73c6e3.chunk.js.map": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js.map",
     "index.html": "/nomadicorchestra/index.html",
-    "precache-manifest.43ef056c0b8c18aedbb43779449c02a3.js": "/nomadicorchestra/precache-manifest.43ef056c0b8c18aedbb43779449c02a3.js",
+    "precache-manifest.712f43bbd5aed8f6efb491c79905d30f.js": "/nomadicorchestra/precache-manifest.712f43bbd5aed8f6efb491c79905d30f.js",
     "service-worker.js": "/nomadicorchestra/service-worker.js",
     "static/css/2.193133a3.chunk.css.map": "/nomadicorchestra/static/css/2.193133a3.chunk.css.map",
-    "static/css/main.94f1129f.chunk.css.map": "/nomadicorchestra/static/css/main.94f1129f.chunk.css.map",
-    "static/js/2.1b72d83d.chunk.js.LICENSE.txt": "/nomadicorchestra/static/js/2.1b72d83d.chunk.js.LICENSE.txt",
-    "static/media/ListenOnAppleMusicT.png": "/nomadicorchestra/static/media/ListenOnAppleMusicT.75746df7.png",
-    "static/media/ListenOnSpotifyT.png": "/nomadicorchestra/static/media/ListenOnSpotifyT.48135902.png",
+    "static/css/main.dd31f877.chunk.css.map": "/nomadicorchestra/static/css/main.dd31f877.chunk.css.map",
+    "static/js/2.ef73c6e3.chunk.js.LICENSE.txt": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js.LICENSE.txt",
     "static/media/LoveAtLast.jpg": "/nomadicorchestra/static/media/LoveAtLast.eaa43b02.jpg",
     "static/media/MoveYourThings.jpg": "/nomadicorchestra/static/media/MoveYourThings.2e172f20.jpg",
-    "static/media/NomadsLogoTransparent2.png": "/nomadicorchestra/static/media/NomadsLogoTransparent2.8a718ce5.png",
     "static/media/index.css": "/nomadicorchestra/static/media/Ubuntu-Regular.2505bfbd.ttf",
     "static/media/home.css": "/nomadicorchestra/static/media/background.4b31735f.jpg",
     "static/media/fullLogo1.png": "/nomadicorchestra/static/media/fullLogo1.11621060.png",
@@ -27,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.c5a04bf9.js",
     "static/css/2.193133a3.chunk.css",
-    "static/js/2.1b72d83d.chunk.js",
-    "static/css/main.94f1129f.chunk.css",
-    "static/js/main.0fa12ea7.chunk.js"
+    "static/js/2.ef73c6e3.chunk.js",
+    "static/css/main.dd31f877.chunk.css",
+    "static/js/main.cb4fdf79.chunk.js"
   ]
 }

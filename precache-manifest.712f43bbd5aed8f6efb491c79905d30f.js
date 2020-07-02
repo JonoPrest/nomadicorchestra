@@ -1,39 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dbf03ae1bb799874132df944dc0bb37f",
+    "revision": "0298cf585e313bfe5ea144370280aae1",
     "url": "/nomadicorchestra/index.html"
   },
   {
-    "revision": "409a5d98c9ffadceb17a",
+    "revision": "ba0fb0c5dce94f8cf488",
     "url": "/nomadicorchestra/static/css/2.193133a3.chunk.css"
   },
   {
-    "revision": "e6bc73307e12497ae389",
-    "url": "/nomadicorchestra/static/css/main.94f1129f.chunk.css"
+    "revision": "d61b00f1c8d8cc13240d",
+    "url": "/nomadicorchestra/static/css/main.dd31f877.chunk.css"
   },
   {
-    "revision": "409a5d98c9ffadceb17a",
-    "url": "/nomadicorchestra/static/js/2.1b72d83d.chunk.js"
+    "revision": "ba0fb0c5dce94f8cf488",
+    "url": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/nomadicorchestra/static/js/2.1b72d83d.chunk.js.LICENSE.txt"
+    "url": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e6bc73307e12497ae389",
-    "url": "/nomadicorchestra/static/js/main.0fa12ea7.chunk.js"
+    "revision": "d61b00f1c8d8cc13240d",
+    "url": "/nomadicorchestra/static/js/main.cb4fdf79.chunk.js"
   },
   {
     "revision": "930103ddcc9391ed9e59",
     "url": "/nomadicorchestra/static/js/runtime-main.c5a04bf9.js"
-  },
-  {
-    "revision": "75746df7149bc1e9412f39d8d1efae92",
-    "url": "/nomadicorchestra/static/media/ListenOnAppleMusicT.75746df7.png"
-  },
-  {
-    "revision": "481359027ab291a9e79a21b4d3b2630b",
-    "url": "/nomadicorchestra/static/media/ListenOnSpotifyT.48135902.png"
   },
   {
     "revision": "eaa43b020519fedcd6630b3a30a337c0",
@@ -42,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2e172f207dc50f1b0919c32dc566b03c",
     "url": "/nomadicorchestra/static/media/MoveYourThings.2e172f20.jpg"
-  },
-  {
-    "revision": "8a718ce504c871b53da6dd7f2e3dab9f",
-    "url": "/nomadicorchestra/static/media/NomadsLogoTransparent2.8a718ce5.png"
   },
   {
     "revision": "2505bfbd9bde14a7829cc8c242a0d25c",
