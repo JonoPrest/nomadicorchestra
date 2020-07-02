@@ -1,22 +1,11 @@
-.listenWrapper {
-	
-	margin-left: 10%;
-	position: absolute;
- 	bottom: 10px;
-  	top: 50px;
-	overflow: scroll;
-    overflow-x: hidden;
-
-}
-::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+.listenContainer {
+    width: 60%;
+    min-width: 46rem;
 }
 
-@media only screen and (max-width: 600px) {
-    .listenWrapper {
-        margin-left: auto;
-        margin-right: auto;
+@media only screen and (max-width: 46rem) {
+    .listenContainer {
+        min-width: 30rem;
         
     }
 }
@@ -29,12 +18,14 @@
 }
 
 .gridLayout {
-	display: grid;
+    display: inline-block;
+/*	display: grid;
 	grid-template-columns: 50% 50%;
-
+*/
   	/*grid-template-rows: 20% 20% 20% 20% 20%;*/
 }
 
 .albumCard {
-	background-color: rgba(242, 242, 242, 0.6);
+	background-color: rgba(42, 42, 42, 0.95);
 }
+

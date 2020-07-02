@@ -12,32 +12,34 @@ const Listen = ({ onRouteChange, gigData }) => {
 return (
 	<div className= 'backgroundOverlay'>
 		<div className='contentContainer pt4'>
-			<div className='flex flex-wrap justify-between'>
-				<div className='ma3 mw6'>
-			      	<ReactPlayer className='center' controls='true'  width="20rem"
-			        url="https://soundcloud.com/nomadicorchestra"
-			      	/>
-		      	</div>
-		      	<div className="gridLayout mw6">
-			      	<div className="albumCard ma2 shadow-5 hidden ba mv4">	
-			      		<p className="center bg-near-black f4 mw5 white mv0 pv2 ph3">Buy "Love At Last" on itunes</p>
-				      	<Tilt className="Tilt center shadow-3 link pointer" options={{ max : 20,  axis: "x"}} style={{ height: 200, width: 200 }}>
+			<div className='listenContainer'>
+				
+		      	<div className="flex flex-wrap justify-around ">
+			      	<div className="albumCard ma2 shadow-5 hidden br4 ">	
+			      		<p className="f4 bg-near-black white mv0 pv2 ph3 br4 br--top">Love At Last</p>
+				      	<Tilt className="Tilt center shadow-3 link pointer" options={{ max : 20,  axis: "x"}} style={{ height: 350, width: 350 }}>
 							 <div className="Tilt-inner"><img alt='' src={LoveAtLast}/></div>
 						</Tilt>
 					</div>
-					<div className="albumCard ma2 shadow-5 hidden ba mv4">	
-			      		<p className="center bg-near-black f4 mw5 white mv0 pv2 ph3">Buy "Move Your Things" on itunes</p>
-				      	<Tilt className="Tilt center shadow-3 link pointer" options={{ max : 20,  axis: "x"}} style={{ height: 200, width: 200 }}>
+					<div className="albumCard ma2 shadow-5 hidden br4 ">	
+			      		<p className="f4 bg-near-black white mv0 pv2 ph3 br4 br--top">Move Your Things</p>
+				      	<Tilt className="Tilt center shadow-3 link pointer" options={{ max : 20,  axis: "x"}} style={{ height: 350, width: 350 }}>
 							 <div className="Tilt-inner"><img alt='' src={MoveYourThings}/></div>
 						</Tilt>
 					</div>
-					<Tilt className="ma2 Tilt center link pointer" options={{ max : 20,  axis: "x"}} style={{ height: 80, width: 200 }}>
-						 <div className="Tilt-inner"><img alt='' src={ListenOnSpotify}/></div>
-					</Tilt>	
-					<Tilt className="ma2 Tilt center link pointer" options={{ max : 20,  axis: "x"}} style={{ height: 80, width: 200 }}>
-						 <div className="Tilt-inner"><img alt='' src={ListenOnAppleMusic}/></div>
-					</Tilt>
+				
 				</div>
+
+				<div className="albumCard shadow-5 hidden br4 ma5">	
+			      		<p className="f4 bg-near-black white mv0 pv2 ph3 br4 br--top">Listen on Soundcloud</p>
+				      	<div className=' '>
+					      	<ReactPlayer className='' controls='true'  width="100%"
+					        url="https://soundcloud.com/nomadicorchestra"
+					      	/>
+				      	</div>
+					</div>
+
+				
 			</div>
 
 		</div>
