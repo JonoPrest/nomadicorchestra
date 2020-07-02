@@ -4,10 +4,11 @@
   background-image: url("./background.jpg");
   background-size: cover;
   background-position: center center;
-  position:absolute;
+  position:fixed;
     top: 0px; /* Header Height */
     bottom: 0px; /* Footer Height */
-    width: 100%;
+    left: 0px;
+    right: 0px;
     
 }
 
@@ -16,7 +17,8 @@
   position: absolute;
   top: 0px; /* Header Height */
   bottom: 0px; /* Footer Height */
-  width: 100%;
+  left: 0px;
+  right: 0px;
 
 }
 
