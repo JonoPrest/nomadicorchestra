@@ -17,6 +17,7 @@ const About = ({ onRouteChange, gigData }) => {
                   className="react-player"
                   controls="true"
                   playing="true"
+                  width={500}
                   wrapper="div"
                   url="https://www.youtube.com/watch?v=VH6iNrVFzFQ"
                 />
