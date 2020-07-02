@@ -1,6 +1,5 @@
 import React from 'react';
 import GigDatesCard from '../GigDatesCard/GigDatesCard';
-import NomadsLogo from './NomadsLogoTransparent2.png';
 import './GigDates.css';
 // import { robots } from './robots'
 
@@ -14,7 +13,6 @@ const GigDates = ({ googleData, onRouteChange, upcomingGigs }) => {
             const eventDate = new Date(googleData[i].Date);
             const todayTime = today.getTime();
             const eventDateTime = eventDate.getTime() + 86400000;
-            console.log(today);
 
             if (todayTime <= eventDateTime) {
               upcomingGigs += 1;

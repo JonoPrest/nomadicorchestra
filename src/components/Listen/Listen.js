@@ -3,11 +3,9 @@ import ReactPlayer from 'react-player';
 import Tilt from 'react-tilt';
 import LoveAtLast from './LoveAtLast.jpg';
 import MoveYourThings from './MoveYourThings.jpg';
-import ListenOnSpotify from './ListenOnSpotifyT.png';
-import ListenOnAppleMusic from './ListenOnAppleMusicT.png';
 import './Listen.css';
 
-const Listen = ({ onRouteChange, gigData }) => {
+const Listen = () => {
   return (
     <div className="backgroundOverlay">
       <div className="contentContainer pt4">

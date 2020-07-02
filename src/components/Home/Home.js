@@ -1,6 +1,5 @@
 import React from 'react';
 import fullLogo from './fullLogo1.png';
-import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import About from '../About/About';
 import Listen from '../Listen/Listen';
 import Contact from '../Contact/Contact';
@@ -9,8 +8,8 @@ import { SocialIcon } from 'tachyons-react-social-icons';
 
 import './home.css';
 
-const Home = ({ onRouteChange, gigData, route, upcomingGigs, googleData }) => {
-  const url = '//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn';
+const Home = ({ onRouteChange, route, googleData }) => {
+  // const url = '//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn';
 
   return (
     <div>
@@ -24,7 +23,7 @@ const Home = ({ onRouteChange, gigData, route, upcomingGigs, googleData }) => {
             />
           )}
           <div className="nav flex flex-wrap justify-between ph3 mt1">
-            {route != 'homePage' && (
+            {route !== 'homePage' && (
               <a
                 onClick={() => onRouteChange('homePage')}
                 className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black"
@@ -34,7 +33,7 @@ const Home = ({ onRouteChange, gigData, route, upcomingGigs, googleData }) => {
               </a>
             )}
 
-            {route != 'aboutPage' && (
+            {route !== 'aboutPage' && (
               <a
                 className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black"
                 onClick={() => onRouteChange('aboutPage')}
@@ -44,7 +43,7 @@ const Home = ({ onRouteChange, gigData, route, upcomingGigs, googleData }) => {
               </a>
             )}
 
-            {route != 'listenPage' && (
+            {route !== 'listenPage' && (
               <a
                 className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black"
                 onClick={() => onRouteChange('listenPage')}
@@ -54,7 +53,7 @@ const Home = ({ onRouteChange, gigData, route, upcomingGigs, googleData }) => {
               </a>
             )}
 
-            {route != 'contactPage' && (
+            {route !== 'contactPage' && (
               <a
                 onClick={() => onRouteChange('contactPage')}
                 className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black"
@@ -64,7 +63,7 @@ const Home = ({ onRouteChange, gigData, route, upcomingGigs, googleData }) => {
               </a>
             )}
 
-            {route != 'gigDatesPage' && (
+            {route !== 'gigDatesPage' && (
               <a
                 onClick={() => onRouteChange('gigDatesPage')}
                 className="navButton ma2 shadow-5 f6 link dim ba ph3 pv2 mb2 dib near-black"

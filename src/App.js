@@ -25,9 +25,9 @@ class App extends Component {
     });
   }
 
-  calculateUpcomingGigs = () => {
-    const currentGigs = this.state.upcomingGigs;
-  };
+  // calculateUpcomingGigs = () => {
+  //   const currentGigs = this.state.upcomingGigs;
+  // };
 
   onRouteChange = (route) => {
     this.setState({ route: route });
