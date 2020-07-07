@@ -5,19 +5,19 @@ import './About.css';
 const About = ({ onRouteChange, gigData }) => {
   return (
     <div className="backgroundOverlay">
-      <div className="contentContainer pt5">
-        <div className="aboutContainer flex items-center">
-          <div className="aboutCard ma2 shadow-5 hidden br4 center">
+      <div className="contentContainer pt2">
+        <div className="aboutContainer pa3">
+          <div className="aboutCard shadow-5 hidden br4 center">
             <p className="f4 bg-near-black white mv0 pv2 ph3 br4 br--top">
               About
             </p>
             <div className="flex flex-wrap justify-center center">
-              <div className="youtubePlayer ">
+              <div className="youtubePlayer w-100">
                 <ReactPlayer
                   className="react-player"
                   controls="true"
                   playing="true"
-                  width={500}
+                  width="100%"
                   wrapper="div"
                   url="https://www.youtube.com/watch?v=VH6iNrVFzFQ"
                 />

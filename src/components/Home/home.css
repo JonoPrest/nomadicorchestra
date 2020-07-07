@@ -58,7 +58,7 @@
   justify-content: center;
   position: absolute;
   width: 100%;
-  bottom: 10px;
+  bottom: 35px;
   top: 60px;
   /*  left: 10%;*/
   overflow: scroll;
@@ -76,10 +76,16 @@ footer {
 }
 
 .social {
-  margin-bottom: 10px;
+
+  position: relative;
+  right: 9%;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
   max-width: 550px;
-  margin-left: 22%;
+  min-width: 450px;
+  margin-bottom: 15px;
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -89,22 +95,14 @@ footer {
   .contentContainer {
     left: 0;
   }
-}
+  .social {
 
-@media all and (orientation: landscape) {
-
-  .logo {
+  
+  right: 0;
   
   
-  min-width: 50px;
-
+ }
 }
 
-.nav {
-  
-  min-width: 50px;
-}
-    
-}
 
 

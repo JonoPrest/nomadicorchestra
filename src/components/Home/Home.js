@@ -11,6 +11,8 @@ import './home.css';
 const Home = ({ onRouteChange, route, googleData }) => {
   // const url = '//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn';
 
+  
+
   return (
     <div>
       <div className="background">
@@ -84,28 +86,34 @@ const Home = ({ onRouteChange, route, googleData }) => {
           <div className="social flex justify-between">
             <SocialIcon
               url="https://www.facebook.com/NomadicOrchestra/"
-              color="rgba(60,60,60,1)"
+              color={route === 'homePage' ? "rgba(60,60,60,1)" : "black"}
+              style={{ height: 40, width: 40 }}
             />
             <SocialIcon
               url="https://www.instagram.com/nomadicorchestra/"
-              color="rgba(60,60,60,1)"
+              color={route === 'homePage' ? "rgba(60,60,60,1)" : "black"}
+              style={{ height: 40, width: 40 }}
             />
             <SocialIcon
               url="https://www.youtube.com/channel/UCgMOgMDBY1tzjjyPRdwMlqA"
-              color="rgba(60,60,60,1)"
+              color={route === 'homePage' ? "rgba(60,60,60,1)" : "black"}
+              style={{ height: 40, width: 40 }}
             />
             <SocialIcon
               url="https://open.spotify.com/artist/27EGFQK4v27KEpLcdJhORE"
-              color="rgba(60,60,60,1)"
+              color={route === 'homePage' ? "rgba(60,60,60,1)" : "black"}
+              style={{ height: 40, width: 40 }}
             />
             <SocialIcon
               url="https://soundcloud.com/nomadicorchestra"
-              color="rgba(60,60,60,1)"
+              color={route === 'homePage' ? "rgba(60,60,60,1)" : "black"}
+              style={{ height: 40, width: 40 }}
             />
             <SocialIcon
               network="email"
               url="mailto:info@nomadicorchestra.com"
-              color="rgba(60,60,60,1)"
+              color={route === 'homePage' ? "rgba(60,60,60,1)" : "black"}
+              style={{ height: 40, width: 40 }}
             />
           </div>
         </footer>

@@ -1,25 +1,22 @@
 .aboutContainer {
   width: 100%;
-  position: relative;
-  bottom: 10%;
+  
+
 }
 
+.aboutCard {
+    height: auto;
+    background-color: rgba(42, 42, 42, 0.9);
+    max-width: 900px;
+
+  }
+
 .youtubeText {
-  max-width: 25rem;
-  height: 360px;
-  background-color: rgba(42, 42, 42, 0.9);
+  max-width: 900px;
+  height: auto;
 }
 
 .youtubePlayer {
   background-color: rgba(42, 42, 42, 0.9);
 }
 
-@media screen and (max-width: 75rem) {
-  .youtubeText {
-    max-width: 640px;
-    height: auto;
-  }
-  .aboutCard {
-    max-width: 640px;
-  }
-}
