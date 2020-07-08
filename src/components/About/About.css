@@ -6,7 +6,7 @@
 
 .aboutCard {
     height: auto;
-    background-color: rgba(42, 42, 42, 0.9);
+  background-color: rgba(70, 90, 105, 0.7);
     max-width: 900px;
 
   }
@@ -17,6 +17,6 @@
 }
 
 .youtubePlayer {
-  background-color: rgba(42, 42, 42, 0.9);
+  background-color: rgba(70, 90, 105, 0.7);
 }
 
