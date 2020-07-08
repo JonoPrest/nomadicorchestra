@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/nomadicorchestra/static/css/main.3c7f7b9b.chunk.css",
-    "main.js": "/nomadicorchestra/static/js/main.9b3bc6ce.chunk.js",
-    "main.js.map": "/nomadicorchestra/static/js/main.9b3bc6ce.chunk.js.map",
+    "main.css": "/nomadicorchestra/static/css/main.10fac6cc.chunk.css",
+    "main.js": "/nomadicorchestra/static/js/main.4b19f927.chunk.js",
+    "main.js.map": "/nomadicorchestra/static/js/main.4b19f927.chunk.js.map",
     "runtime-main.js": "/nomadicorchestra/static/js/runtime-main.c5a04bf9.js",
     "runtime-main.js.map": "/nomadicorchestra/static/js/runtime-main.c5a04bf9.js.map",
     "static/css/2.193133a3.chunk.css": "/nomadicorchestra/static/css/2.193133a3.chunk.css",
     "static/js/2.ef73c6e3.chunk.js": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js",
     "static/js/2.ef73c6e3.chunk.js.map": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js.map",
     "index.html": "/nomadicorchestra/index.html",
-    "precache-manifest.7c126ba92f3d9b90b8c7307d91da6377.js": "/nomadicorchestra/precache-manifest.7c126ba92f3d9b90b8c7307d91da6377.js",
+    "precache-manifest.9baf8547190dfdaa924a345748f2b8d1.js": "/nomadicorchestra/precache-manifest.9baf8547190dfdaa924a345748f2b8d1.js",
     "service-worker.js": "/nomadicorchestra/service-worker.js",
     "static/css/2.193133a3.chunk.css.map": "/nomadicorchestra/static/css/2.193133a3.chunk.css.map",
-    "static/css/main.3c7f7b9b.chunk.css.map": "/nomadicorchestra/static/css/main.3c7f7b9b.chunk.css.map",
+    "static/css/main.10fac6cc.chunk.css.map": "/nomadicorchestra/static/css/main.10fac6cc.chunk.css.map",
     "static/js/2.ef73c6e3.chunk.js.LICENSE.txt": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js.LICENSE.txt",
     "static/media/LoveAtLast.jpg": "/nomadicorchestra/static/media/LoveAtLast.eaa43b02.jpg",
     "static/media/MoveYourThings.jpg": "/nomadicorchestra/static/media/MoveYourThings.2e172f20.jpg",
     "static/media/index.css": "/nomadicorchestra/static/media/Ubuntu-Regular.2505bfbd.ttf",
     "static/media/home.css": "/nomadicorchestra/static/media/background-min.af26a5c5.jpg",
-    "static/media/fullLogo1.png": "/nomadicorchestra/static/media/fullLogo1.11621060.png",
+    "static/media/logo.png": "/nomadicorchestra/static/media/logo.15b939e6.png",
     "static/media/rock-it.regular.ttf": "/nomadicorchestra/static/media/rock-it.regular.b0d5f1c9.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.c5a04bf9.js",
     "static/css/2.193133a3.chunk.css",
     "static/js/2.ef73c6e3.chunk.js",
-    "static/css/main.3c7f7b9b.chunk.css",
-    "static/js/main.9b3bc6ce.chunk.js"
+    "static/css/main.10fac6cc.chunk.css",
+    "static/js/main.4b19f927.chunk.js"
   ]
 }

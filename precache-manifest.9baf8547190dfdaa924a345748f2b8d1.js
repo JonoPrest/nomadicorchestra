@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb4f280cec92542b29fb6cba4e06b5ba",
+    "revision": "00a426ad8b9ecc8ddc7390a213b5ca49",
     "url": "/nomadicorchestra/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nomadicorchestra/static/css/2.193133a3.chunk.css"
   },
   {
-    "revision": "9debef958c323effeebb",
-    "url": "/nomadicorchestra/static/css/main.3c7f7b9b.chunk.css"
+    "revision": "64a2bc5cac3037565e3a",
+    "url": "/nomadicorchestra/static/css/main.10fac6cc.chunk.css"
   },
   {
     "revision": "ba0fb0c5dce94f8cf488",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9debef958c323effeebb",
-    "url": "/nomadicorchestra/static/js/main.9b3bc6ce.chunk.js"
+    "revision": "64a2bc5cac3037565e3a",
+    "url": "/nomadicorchestra/static/js/main.4b19f927.chunk.js"
   },
   {
     "revision": "930103ddcc9391ed9e59",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nomadicorchestra/static/media/background-min.af26a5c5.jpg"
   },
   {
-    "revision": "11621060b84ef47106f5258a8bc26506",
-    "url": "/nomadicorchestra/static/media/fullLogo1.11621060.png"
+    "revision": "15b939e6960cc040765577d86efe641c",
+    "url": "/nomadicorchestra/static/media/logo.15b939e6.png"
   },
   {
     "revision": "b0d5f1c90cc0f3348471f7908ed41c2c",
