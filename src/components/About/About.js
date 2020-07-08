@@ -7,8 +7,8 @@ const About = ({ onRouteChange, gigData }) => {
     <div className="backgroundOverlay">
       <div className="contentContainer pt2">
         <div className="aboutContainer pa3">
-          <div className="aboutCard shadow-5 hidden br4 center">
-            <p className="f4 bg-near-black white mv0 pv2 ph3 br4 br--top">
+          <div className="aboutCard cardBG shadow-5 hidden br4 center">
+            <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
               About
             </p>
             <div className="flex flex-wrap justify-center center">
@@ -19,7 +19,7 @@ const About = ({ onRouteChange, gigData }) => {
                   playing="true"
                   width="100%"
                   wrapper="div"
-                  url="https://www.youtube.com/watch?v=VH6iNrVFzFQ"
+                  url="https://www.youtube.com/watch?v=NmWxg0AK9e8&feature=youtu.be"
                 />
               </div>
               <div className=" youtubeText pa2 ">

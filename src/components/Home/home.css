@@ -10,7 +10,7 @@
 }
 
 .backgroundOverlay {
-  background-color: rgba(242, 242, 242, 0.5);
+  background-color: rgba(242, 242, 242, 0.3);
   position: absolute;
   top: 0px; /* Header Height */
   bottom: 0px; /* Footer Height */
@@ -74,6 +74,18 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.cardHeader {
+  background-color: rgba(32,28,29, 0.9);
+}
+
+/*.cardBG {
+  background-color: rgba(135, 150, 160, 0.8);
+}*/
+
+.cardBG {
+  background-color: rgba(42,42,42, 0.7);
 }
 
 .social {

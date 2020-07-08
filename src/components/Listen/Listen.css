@@ -9,20 +9,56 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .listenWrapper {
-    max-width: 500px;
-  }
-}
 
-.gridLayout {
-  display: inline-block;
-  /*	display: grid;
-	grid-template-columns: 50% 50%;
-*/
-  /*grid-template-rows: 20% 20% 20% 20% 20%;*/
-}
+
 
 .albumCard {
   background-color: rgba(70, 90, 105, 0.7);
+}
+
+.album {
+  background-size: cover;
+}
+
+#LoveAtLast {
+  background-image: url(LoveAtLast.jpg); 
+}
+
+#MoveYourThings {
+  background-image: url(MoveYourThings.jpg); 
+}
+
+.hide {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+   background-color: rgba(42, 42, 42, 0.6);
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+
+
+}
+
+.album:hover > .hide {
+  visibility: visible;
+  opacity: 1;
+  
+  
+
+}
+
+.hide:hover {
+ 
+}
+
+
+
+.listenButtons {
+  width: 200px;
+  height: 90px;
 }

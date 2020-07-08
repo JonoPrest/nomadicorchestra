@@ -11,8 +11,8 @@ const GigDatesCard = (props) => {
 
   return (
     <div className="mv3 mh1">
-      <div className="card  datesBackground shadow-5 hidden mv4 br4 ">
-        <h1 className="f4 bg-near-black white mv0 pv2 ph3 br4 br--top">
+      <div className="card  cardBG shadow-5 hidden mv4 br4 ">
+        <h1 className="cardHeader f4 white mv0 pv2 ph3 br4 br--top">
           {date} - {venue}
         </h1>
         <div className=" pa3">

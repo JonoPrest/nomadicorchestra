@@ -3,17 +3,21 @@ import ReactPlayer from 'react-player';
 import Tilt from 'react-tilt';
 import LoveAtLast from './LoveAtLast.jpg';
 import MoveYourThings from './MoveYourThings.jpg';
+import ListenOnSpotify from './ListenOnSpotifyT.png';
+import ListenOnAppleMusic from './ListenOnAppleMusicT.png';
 import './Listen.css';
 
 const Listen = () => {
+
+
   return (
     <div className="backgroundOverlay">
       <div className="contentContainer pt4">
         <div className="listenContainer">
           <div className="flex flex-wrap justify-around ">
 
-            <div className="albumCard ma3 shadow-5 hidden br4 ">
-              <p className="f4 bg-near-black white mv0 pv2 ph3 br4 br--top">
+            <div className="ma2 bg-black-30 shadow-5 hidden br4 br--top ">
+              <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
                 Madosini
               </p>
               <iframe style={{border: "0", width: "350px", height: "350px"}}
@@ -23,39 +27,45 @@ const Listen = () => {
                 </iframe>
             </div>
 
-            <div className="albumCard ma3 shadow-5 hidden br4 ">
-              <p className="f4 bg-near-black white mv0 pv2 ph3 br4 br--top">
+            <div className="ma2 shadow-5 hidden br4 br--top">
+              <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
                 Love At Last
               </p>
-              <Tilt
-                className="Tilt center shadow-3 link pointer"
+              <div
+                id="LoveAtLast"
+                className="Tilt album center shadow-3 link"
                 options={{ max: 20, axis: 'x' }}
-                style={{ height: 350, width: 350 }}
+                style={{ height: 350, width: 350}}
               >
-                <div className="Tilt-inner">
-                  <img alt="" src={LoveAtLast} />
+                <div className="hide">
+                  
+                    <a href="https://open.spotify.com/album/10YIVjl4wVBwMgVNeSb4Xn" target="_blank"><img className="listenButtons grow pointer" src={ListenOnSpotify} /></a>
+                    <a href="https://music.apple.com/za/album/love-at-last/1092836741" target="_blank"><img className="listenButtons grow pointer" src={ListenOnAppleMusic} /></a>
+                 
                 </div>
-              </Tilt>
+              </div>
             </div>
 
-            <div className="albumCard ma3 shadow-5 hidden br4 ">
-              <p className="f4 bg-near-black white mv0 pv2 ph3 br4 br--top">
+            <div className="ma2 shadow-5 hidden br4 br--top">
+              <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
                 Move Your Things
               </p>
-              <Tilt
-                className="Tilt center shadow-3 link pointer"
+              <div
+                id="MoveYourThings"
+                className="Tilt album center shadow-3 link"
                 options={{ max: 20, axis: 'x' }}
                 style={{ height: 350, width: 350 }}
               >
-                <div className="Tilt-inner">
-                  <img alt="" src={MoveYourThings} />
-                </div>
-              </Tilt>
+              <div className="hide">
+                <a href="https://open.spotify.com/album/38wVSoZt9hlMJZu8RzDXru" target="_blank"><img className="listenButtons grow pointer" src={ListenOnSpotify} /></a>
+                <a href="https://music.apple.com/za/album/move-your-things/651434215" target="_blank"><img className="listenButtons grow pointer" src={ListenOnAppleMusic} /></a>
+              </div> 
+              </div>
             </div>
           </div>
 
-          <div className="albumCard shadow-5 hidden br4 ma5">
-            <p className="f4 bg-near-black white mv0 pv2 ph3 br4 br--top">
+          <div className="shadow-5 hidden br4 ma5">
+            <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
               Listen on Soundcloud
             </p>
             <div className=" ">
