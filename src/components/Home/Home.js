@@ -1,5 +1,5 @@
 import React from 'react';
-import fullLogo from './fullLogo1.png';
+import fullLogo from './logo.png';
 import About from '../About/About';
 import Listen from '../Listen/Listen';
 import Contact from '../Contact/Contact';
@@ -18,13 +18,15 @@ const Home = ({ onRouteChange, route, googleData }) => {
       <div className="background">
         <div className="allNav flex flex-wrap items-center">
           {route === 'homePage' && (
+            <div className="logo">
             <img
-              className="animate__animated animate__bounce logo"
+              className="animate__animated animate__bounce  "
               src={fullLogo}
               alt=""
             />
+            </div>
           )}
-          <div className="nav flex flex-wrap justify-between ph3 mt1">
+          <div className="nav flex flex-wrap justify-between ph3 mt1 ">
             {route !== 'homePage' && (
               <a
                 onClick={() => onRouteChange('homePage')}
