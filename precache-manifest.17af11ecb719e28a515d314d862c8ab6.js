@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "00a426ad8b9ecc8ddc7390a213b5ca49",
+    "revision": "1e55db0ffecc9485dc105cc14713f848",
     "url": "/nomadicorchestra/index.html"
   },
   {
-    "revision": "ba0fb0c5dce94f8cf488",
+    "revision": "371a7527efe30c8a8c39",
     "url": "/nomadicorchestra/static/css/2.193133a3.chunk.css"
   },
   {
-    "revision": "64a2bc5cac3037565e3a",
-    "url": "/nomadicorchestra/static/css/main.10fac6cc.chunk.css"
+    "revision": "58faebbac0250175f0ae",
+    "url": "/nomadicorchestra/static/css/main.3156be25.chunk.css"
   },
   {
-    "revision": "ba0fb0c5dce94f8cf488",
-    "url": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js"
+    "revision": "371a7527efe30c8a8c39",
+    "url": "/nomadicorchestra/static/js/2.ff2e5d0e.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/nomadicorchestra/static/js/2.ef73c6e3.chunk.js.LICENSE.txt"
+    "url": "/nomadicorchestra/static/js/2.ff2e5d0e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64a2bc5cac3037565e3a",
-    "url": "/nomadicorchestra/static/js/main.4b19f927.chunk.js"
+    "revision": "58faebbac0250175f0ae",
+    "url": "/nomadicorchestra/static/js/main.501d697f.chunk.js"
   },
   {
     "revision": "930103ddcc9391ed9e59",
     "url": "/nomadicorchestra/static/js/runtime-main.c5a04bf9.js"
+  },
+  {
+    "revision": "75746df7149bc1e9412f39d8d1efae92",
+    "url": "/nomadicorchestra/static/media/ListenOnAppleMusicT.75746df7.png"
+  },
+  {
+    "revision": "481359027ab291a9e79a21b4d3b2630b",
+    "url": "/nomadicorchestra/static/media/ListenOnSpotifyT.48135902.png"
   },
   {
     "revision": "eaa43b020519fedcd6630b3a30a337c0",
