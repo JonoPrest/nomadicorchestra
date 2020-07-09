@@ -1,15 +1,11 @@
 .aboutContainer {
   width: 100%;
-  
-
 }
 
 .aboutCard {
-    height: auto;
-  background-color: rgba(70, 90, 105, 0.7);
-    max-width: 900px;
-
-  }
+  height: auto;
+  max-width: 900px;
+}
 
 .youtubeText {
   max-width: 900px;
@@ -17,6 +13,4 @@
 }
 
 .youtubePlayer {
-
 }
-

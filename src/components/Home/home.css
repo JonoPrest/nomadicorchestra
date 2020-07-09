@@ -2,11 +2,11 @@
   background-image: url(background-min.jpg);
   background-size: cover;
   background-position: center center;
-  position:fixed;
-    top: 0px; /* Header Height */
-    bottom: 0px; /* Footer Height */
-    left: 0px;
-    right: 0px;
+  position: fixed;
+  top: 0px; /* Header Height */
+  bottom: 0px; /* Footer Height */
+  left: 0px;
+  right: 0px;
 }
 
 .backgroundOverlay {
@@ -20,14 +20,14 @@
 
 /*.mailchimp {
 
-	position: absolute;
-	top: 0px;
-	right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }*/
 
 .allNav {
   margin-left: 10%;
-/*  position: relative;
+  /*  position: relative;
 */
 }
 
@@ -77,7 +77,7 @@ footer {
 }
 
 .cardHeader {
-  background-color: rgba(32,28,29, 0.9);
+  background-color: rgba(32, 28, 29, 0.9);
 }
 
 /*.cardBG {
@@ -85,11 +85,10 @@ footer {
 }*/
 
 .cardBG {
-  background-color: rgba(42,42,42, 0.7);
+  background-color: rgba(42, 42, 42, 0.7);
 }
 
 .social {
-
   position: relative;
   right: 9%;
   margin-left: auto;
@@ -98,7 +97,6 @@ footer {
   max-width: 550px;
   min-width: 450px;
   margin-bottom: 15px;
-  
 }
 
 @media only screen and (max-width: 600px) {
@@ -109,13 +107,6 @@ footer {
     left: 0;
   }
   .social {
-
-  
-  right: 0;
-  
-  
- }
+    right: 0;
+  }
 }
-
-
-

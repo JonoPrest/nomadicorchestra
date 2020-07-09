@@ -1,5 +1,5 @@
-import React from 'react';
-import './Contact.css';
+import React from "react";
+import "./Contact.css";
 
 const Contact = () => {
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
           <form className="pa4 black-80 center">
             <h1>Get in touch with us</h1>
             <h2 className="f5">
-              Or email us directly at:{' '}
+              Or email us directly at:{" "}
               <a className="black" href="mailto:info@nomadicorchestra.com">
                 info@nomadicorchestra.com
               </a>
