@@ -16,13 +16,13 @@ const Home = ({ onRouteChange, route, googleData }) => {
       <div className="background">
         <div className="allNav flex flex-wrap items-center">
           {route === "homePage" && (
-            <div className="logo">
+           
               <img
-                className="animate__animated animate__bounce  "
+                className="logo animate__animated animate__bounce"
                 src={fullLogo}
                 alt=""
               />
-            </div>
+            
           )}
           <div className="nav flex flex-wrap justify-between ph3 mt1 ">
             {route !== "homePage" && (
