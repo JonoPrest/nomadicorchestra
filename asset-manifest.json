@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nomadicorchestra/static/css/main.b565e9fa.chunk.css",
+    "main.css": "/nomadicorchestra/static/css/main.1e17fc12.chunk.css",
     "main.js": "/nomadicorchestra/static/js/main.100ebc3c.chunk.js",
     "main.js.map": "/nomadicorchestra/static/js/main.100ebc3c.chunk.js.map",
     "runtime-main.js": "/nomadicorchestra/static/js/runtime-main.c5a04bf9.js",
@@ -9,10 +9,10 @@
     "static/js/2.21ca10e3.chunk.js": "/nomadicorchestra/static/js/2.21ca10e3.chunk.js",
     "static/js/2.21ca10e3.chunk.js.map": "/nomadicorchestra/static/js/2.21ca10e3.chunk.js.map",
     "index.html": "/nomadicorchestra/index.html",
-    "precache-manifest.195aa95d642efa20b5cf2715a006e692.js": "/nomadicorchestra/precache-manifest.195aa95d642efa20b5cf2715a006e692.js",
+    "precache-manifest.89e83b27b9f891955500255f3fb24ab7.js": "/nomadicorchestra/precache-manifest.89e83b27b9f891955500255f3fb24ab7.js",
     "service-worker.js": "/nomadicorchestra/service-worker.js",
     "static/css/2.193133a3.chunk.css.map": "/nomadicorchestra/static/css/2.193133a3.chunk.css.map",
-    "static/css/main.b565e9fa.chunk.css.map": "/nomadicorchestra/static/css/main.b565e9fa.chunk.css.map",
+    "static/css/main.1e17fc12.chunk.css.map": "/nomadicorchestra/static/css/main.1e17fc12.chunk.css.map",
     "static/js/2.21ca10e3.chunk.js.LICENSE.txt": "/nomadicorchestra/static/js/2.21ca10e3.chunk.js.LICENSE.txt",
     "static/media/ListenOnAppleMusicT.png": "/nomadicorchestra/static/media/ListenOnAppleMusicT.75746df7.png",
     "static/media/ListenOnSpotifyT.png": "/nomadicorchestra/static/media/ListenOnSpotifyT.48135902.png",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.c5a04bf9.js",
     "static/css/2.193133a3.chunk.css",
     "static/js/2.21ca10e3.chunk.js",
-    "static/css/main.b565e9fa.chunk.css",
+    "static/css/main.1e17fc12.chunk.css",
     "static/js/main.100ebc3c.chunk.js"
   ]
 }
