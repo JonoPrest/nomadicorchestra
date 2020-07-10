@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import Tilt from 'react-tilt';
 import LoveAtLast from './LoveAtLast.jpg';
 import MoveYourThings from './MoveYourThings.jpg';
 import ListenOnSpotify from './ListenOnSpotifyT.png';
