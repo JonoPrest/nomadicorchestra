@@ -12,7 +12,7 @@ const Listen = () => {
 
   return (
     <div className="backgroundOverlay">
-      <div className="contentContainer pt4">
+      <div className="contentContainer pt2">
         <div className="listenContainer">
           <div className="flex flex-wrap justify-around ">
 

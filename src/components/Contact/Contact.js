@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import ClipLoader from "react-spinners/ClipLoader"
 
 import "./Contact.css";
 
@@ -8,13 +9,17 @@ class Contact extends React.Component {
     super();
     this.state = {
       emailSubmit: "waiting",
+      loading: "loaded"
     };
   }
 
+
+
   render() {
-    const { emailSubmit } = this.state;
+    const { emailSubmit, loading } = this.state;
     const that = this;
     function sendEmail(e) {
+      that.setState({loading:"loading"});
       e.preventDefault();
 
       emailjs
@@ -22,8 +27,7 @@ class Contact extends React.Component {
         .then(
           (result) => {
             console.log(result.text);
-            that.setState({ emailSubmit: "submitted" });
-            console.log(that.state.emailSubmit);
+            that.setState({ emailSubmit: "submitted", loading: "loaded" });
           },
           (error) => {
             console.log(error.text);
@@ -33,16 +37,38 @@ class Contact extends React.Component {
     }
     return (
       <div className="backgroundOverlay">
+        {loading === "loading" &&
+              <div className="loading">
+                <div>
+                <h1 className="">sending message</h1>
+                <div className="">
+                  <ClipLoader
+                    size={40}
+                    color={"black"}
+                  />
+                </div>
+                </div>
+
+                
+              </div>
+            }
         <div className="contentContainer">
+          
           <div className="formContainer ph3 pt3">
-            <div className="contactCard cardBG shadow-5 hidden br4 center">
-              <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">Contact</p>
-              {emailSubmit === "waiting" && (
+            
+            {emailSubmit === "waiting" && (
+              <div className="contactCard cardBG shadow-5 hidden br4 center">
+                <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+                  Contact
+                </p>
                 <form className="white center" onSubmit={sendEmail}>
                   <h1>Get in touch with us</h1>
                   <h2 className="f5">
                     Or email us directly at:{" "}
-                    <a className="white" href="mailto:info@nomadicorchestra.com">
+                    <a
+                      className="white"
+                      href="mailto:info@nomadicorchestra.com"
+                    >
                       info@nomadicorchestra.com
                     </a>
                   </h2>
@@ -57,6 +83,7 @@ class Contact extends React.Component {
                         type="text"
                         aria-describedby="name-desc"
                         name="user_name"
+                        required
                       />
                     </div>
                     <div className="tl measure">
@@ -69,13 +96,14 @@ class Contact extends React.Component {
                         type="email"
                         aria-describedby="name-desc"
                         name="user_email"
+                        required
                       />
                     </div>
                   </div>
 
                   <div className="tl mh4">
                     <label htmlFor="name" className="tl f6 b db mb2">
-                      Enquiry:
+                      Message:
                     </label>
                     <textarea
                       id="comment"
@@ -86,26 +114,62 @@ class Contact extends React.Component {
                     ></textarea>
                   </div>
                   <input
-                    className="center f6 f5-l button-reset pv3 tc bn bg-animate bg-black-70 hover-bg-near-black white pointer w-100 w-25-m w-20-l br2-ns mb3"
+                    className="f6 grow br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate hover-bg-near-black ba b--black pointer"
                     type="submit"
-                    value="Submit Email"
+                    value="Send Message"
                   />
                 </form>
-              )}
-              {emailSubmit === "submitted" &&
-              <div>
-                <h1>Thank You For Getting in Touch With Us!</h1>
-                <h2>Your email has been submitted and we will get back to you as soon as possible.</h2>
               </div>
-              }
-              {emailSubmit === "error" &&
-              <div>
-                <h1>We're sorry!</h1>
-                <h2>There was an error when submitting your email. Please try again or contact us directly via email at:</h2>
-                <a href="mailto:info@nomadicorchestra.com">info@nomadicorchestra.com</a>
+            )}
+
+            {emailSubmit === "submitted" && (
+              <div className="contactCard cardBG shadow-5 hidden br4 center measure white pb2">
+                <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+                  Contact
+                </p>
+                <div>
+                  <h1>Thank You</h1>
+                  <h2>for getting in touch with us!</h2>
+                  <p className="pa4">
+                    Your message has been sent to us and we will get back to you as
+                    soon as we can.
+                  </p>
+                  <a
+                    className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate pointer hover-bg-near-black ma3"
+                    onClick={()=>this.setState({emailSubmit:"waiting"})}
+                    
+                  >
+                    Send another message
+                  </a>
+                </div>
               </div>
-              }
-            </div>
+            )}
+            {emailSubmit === "error" && (
+              <div className="contactCard cardBG shadow-5 hidden br4 center measure white pb2">
+                <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+                  Contact
+                </p>
+                <div>
+                  <h1>We're sorry!</h1>
+                  <p className="ph4">
+                    There seems to have been an error in sending your message.
+                    Please try again or contact us directly at the following email address:
+                  </p>
+                  <div>
+                  <a className="white" href="mailto:info@nomadicorchestra.com">
+                    info@nomadicorchestra.com
+                  </a>
+                  </div>
+                  <a
+                    className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate pointer hover-bg-near-black ma3"
+                    onClick={()=>this.setState({emailSubmit:"waiting"})}
+                    
+                  >
+                    Try sending another message
+                  </a>
+                </div>
+              </div>     
+            )}
           </div>
         </div>
       </div>

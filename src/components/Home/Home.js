@@ -6,6 +6,7 @@ import Contact from "../Contact/Contact";
 import GigDates from "../GigDates/GigDates";
 import { SocialIcon } from "tachyons-react-social-icons";
 
+
 import "./home.css";
 
 const Home = ({ onRouteChange, route, googleData }) => {
