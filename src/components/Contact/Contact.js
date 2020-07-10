@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import ClipLoader from "react-spinners/ClipLoader"
+import ClipLoader from "react-spinners/ClipLoader";
 
 import "./Contact.css";
 
@@ -9,17 +9,15 @@ class Contact extends React.Component {
     super();
     this.state = {
       emailSubmit: "waiting",
-      loading: "loaded"
+      loading: "loaded",
     };
   }
-
-
 
   render() {
     const { emailSubmit, loading } = this.state;
     const that = this;
     function sendEmail(e) {
-      that.setState({loading:"loading"});
+      that.setState({ loading: "loading" });
       e.preventDefault();
 
       emailjs
@@ -37,25 +35,18 @@ class Contact extends React.Component {
     }
     return (
       <div className="backgroundOverlay">
-        {loading === "loading" &&
-              <div className="loading">
-                <div>
-                <h1 className="">sending message</h1>
-                <div className="">
-                  <ClipLoader
-                    size={40}
-                    color={"black"}
-                  />
-                </div>
-                </div>
-
-                
+        {loading === "loading" && (
+          <div className="loading">
+            <div>
+              <h1 className="">sending message</h1>
+              <div className="">
+                <ClipLoader size={40} color={"black"} />
               </div>
-            }
+            </div>
+          </div>
+        )}
         <div className="contentContainer">
-          
           <div className="formContainer ph3 pt3">
-            
             {emailSubmit === "waiting" && (
               <div className="contactCard cardBG shadow-5 hidden br4 center">
                 <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
@@ -131,13 +122,12 @@ class Contact extends React.Component {
                   <h1>Thank You</h1>
                   <h2>for getting in touch with us!</h2>
                   <p className="pa4">
-                    Your message has been sent to us and we will get back to you as
-                    soon as we can.
+                    Your message has been sent to us and we will get back to you
+                    as soon as we can.
                   </p>
                   <a
                     className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate pointer hover-bg-near-black ma3"
-                    onClick={()=>this.setState({emailSubmit:"waiting"})}
-                    
+                    onClick={() => this.setState({ emailSubmit: "waiting" })}
                   >
                     Send another message
                   </a>
@@ -153,22 +143,25 @@ class Contact extends React.Component {
                   <h1>We're sorry!</h1>
                   <p className="ph4">
                     There seems to have been an error in sending your message.
-                    Please try again or contact us directly at the following email address:
+                    Please try again or contact us directly at the following
+                    email address:
                   </p>
                   <div>
-                  <a className="white" href="mailto:info@nomadicorchestra.com">
-                    info@nomadicorchestra.com
-                  </a>
+                    <a
+                      className="white"
+                      href="mailto:info@nomadicorchestra.com"
+                    >
+                      info@nomadicorchestra.com
+                    </a>
                   </div>
                   <a
                     className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate pointer hover-bg-near-black ma3"
-                    onClick={()=>this.setState({emailSubmit:"waiting"})}
-                    
+                    onClick={() => this.setState({ emailSubmit: "waiting" })}
                   >
                     Try sending another message
                   </a>
                 </div>
-              </div>     
+              </div>
             )}
           </div>
         </div>

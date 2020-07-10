@@ -6,7 +6,6 @@ import Contact from "../Contact/Contact";
 import GigDates from "../GigDates/GigDates";
 import { SocialIcon } from "tachyons-react-social-icons";
 
-
 import "./home.css";
 
 const Home = ({ onRouteChange, route, googleData }) => {
@@ -17,13 +16,11 @@ const Home = ({ onRouteChange, route, googleData }) => {
       <div className="background">
         <div className="allNav flex flex-wrap items-center">
           {route === "homePage" && (
-           
-              <img
-                className="logo animate__animated animate__bounce"
-                src={fullLogo}
-                alt=""
-              />
-            
+            <img
+              className="logo animate__animated animate__bounce"
+              src={fullLogo}
+              alt=""
+            />
           )}
           <div className="nav flex flex-wrap justify-between ph3 mt1 ">
             {route !== "homePage" && (
