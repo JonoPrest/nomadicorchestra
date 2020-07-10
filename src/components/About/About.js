@@ -6,7 +6,7 @@ const About = ({ onRouteChange, gigData }) => {
   return (
     <div className="backgroundOverlay">
       <div className="contentContainer pt2">
-        <div className="aboutContainer pa3">
+        <div className="aboutContainer ph3 pt2">
           <div className="aboutCard cardBG shadow-5 hidden br4 center">
             <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">About</p>
             <div className="flex flex-wrap justify-center center">

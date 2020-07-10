@@ -3,18 +3,20 @@
 }
 
 .cardText {
-  max-width: 32rem;
+  max-width: 30rem;
 }
 
 .cardImage {
-  max-width: 32rem;
+  max-width: 30rem;
 }
 
-@media screen and (max-width: 80rem) {
+
+@media screen and (max-width: 67rem) {
   .cardText {
     max-width: 33rem;
   }
   .card {
     max-width: 30rem;
+
   }
 }
