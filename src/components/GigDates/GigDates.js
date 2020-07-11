@@ -3,7 +3,7 @@ import GigDatesCard from '../GigDatesCard/GigDatesCard';
 import './GigDates.css';
 // import { robots } from './robots'
 
-const GigDates = ({ googleData, onRouteChange, upcomingGigs }) => {
+const GigDates = ({ googleData }) => {
   return (
     <div className="backgroundOverlay">
       <div className="contentContainer">
@@ -15,7 +15,7 @@ const GigDates = ({ googleData, onRouteChange, upcomingGigs }) => {
             const eventDateTime = eventDate.getTime() + 86400000;
 
             if (todayTime <= eventDateTime) {
-              upcomingGigs += 1;
+              
               return (
                 <GigDatesCard
                   key={i}
@@ -25,6 +25,7 @@ const GigDates = ({ googleData, onRouteChange, upcomingGigs }) => {
                   description={googleData[i].Description}
                   image={googleData[i].Image}
                   buyTickets={googleData[i].buyTickets}
+                  
                 />
               );
             }

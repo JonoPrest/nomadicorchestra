@@ -25,15 +25,15 @@ class App extends Component {
     });
   }
 
-  // calculateUpcomingGigs = () => {
-  //   const currentGigs = this.state.upcomingGigs;
-  // };
-
   onRouteChange = (route) => {
     this.setState({ route: route });
   };
 
+  
+
   render() {
+
+
     return (
       <div className="App">
         <Home
@@ -41,7 +41,6 @@ class App extends Component {
           onRouteChange={this.onRouteChange}
           googleData={this.state.data}
           gigData={this.state.data}
-          upcomingGigs={this.state.upcomingGigs}
         />
         ;
       </div>
