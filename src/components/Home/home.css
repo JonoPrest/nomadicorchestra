@@ -18,6 +18,14 @@
   right: 0px;
 }
 
+.backgroundOverlay2 {
+  background-color: rgba(42, 42, 42, 0.7);
+  position: absolute;
+  top: 0px; /* Header Height */
+  bottom: 0px; /* Footer Height */
+  left: 0px;
+  right: 0px;
+}
 /*.mailchimp {
 
   position: absolute;
@@ -51,6 +59,8 @@
 .navButton {
   background-color: rgba(242, 242, 242, 0.6);
   z-index: +1;
+  width: 100px;
+  height: 35px;
 }
 
 .contentContainer {
@@ -89,11 +99,11 @@ footer {
 
 .social {
   position: relative;
-  right: 9%;
+  right: 8%;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  max-width: 550px;
+  max-width: 590px;
   min-width: 450px;
   margin-bottom: 15px;
 }
@@ -108,4 +118,9 @@ footer {
   .social {
     right: 0;
   }
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
 }

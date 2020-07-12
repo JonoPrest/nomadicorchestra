@@ -49,9 +49,9 @@ class Contact extends React.Component {
           <div className="formContainer ph3 pt3">
             {emailSubmit === "waiting" && (
               <div className="contactCard cardBG shadow-5 hidden br4 center">
-                <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+                <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
                   Contact
-                </p>
+                </h1>
                 <form className="white center" onSubmit={sendEmail}>
                   <h1>Get in touch with us</h1>
                   <h2 className="f5">
@@ -115,9 +115,9 @@ class Contact extends React.Component {
 
             {emailSubmit === "submitted" && (
               <div className="contactCard cardBG shadow-5 hidden br4 center measure white pb2">
-                <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+                <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
                   Contact
-                </p>
+                </h1>
                 <div>
                   <h1>Thank You</h1>
                   <h2>for getting in touch with us!</h2>
@@ -136,9 +136,9 @@ class Contact extends React.Component {
             )}
             {emailSubmit === "error" && (
               <div className="contactCard cardBG shadow-5 hidden br4 center measure white pb2">
-                <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+                <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
                   Contact
-                </p>
+                </h1>
                 <div>
                   <h1>We're sorry!</h1>
                   <p className="ph4">

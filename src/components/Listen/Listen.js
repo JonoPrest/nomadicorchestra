@@ -13,9 +13,9 @@ const Listen = () => {
         <div className="listenContainer">
           <div className="flex flex-wrap justify-around ">
             <div className="ma2 bg-black-30 shadow-5 hidden br4 br--top ">
-              <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+              <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
                 Madosini
-              </p>
+              </h1>
               <iframe
                 style={{ border: "0", width: "350px", height: "350px" }}
                 src="https://bandcamp.com/EmbeddedPlayer/track=1292036557/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
@@ -28,9 +28,9 @@ const Listen = () => {
             </div>
 
             <div className="ma2 shadow-5 hidden br4 br--top">
-              <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+              <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
                 Love At Last
-              </p>
+              </h1>
               <div
                 id="LoveAtLast"
                 className="Tilt album center shadow-3 link"
@@ -61,9 +61,9 @@ const Listen = () => {
             </div>
 
             <div className="ma2 shadow-5 hidden br4 br--top">
-              <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+              <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
                 Move Your Things
-              </p>
+              </h1>
               <div
                 id="MoveYourThings"
                 className="Tilt album center shadow-3 link"
@@ -95,9 +95,9 @@ const Listen = () => {
           </div>
 
           <div className="shadow-5 hidden br4 ma5">
-            <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+            <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
               Listen on Soundcloud
-            </p>
+            </h1>
             <div className=" ">
               <ReactPlayer
                 className=""

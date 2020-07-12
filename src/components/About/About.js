@@ -8,7 +8,7 @@ const About = ({ onRouteChange, gigData }) => {
       <div className="contentContainer pt2">
         <div className="aboutContainer ph3 pt2">
           <div className="aboutCard cardBG shadow-5 hidden br4 center">
-            <p className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">About</p>
+            <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">About</h1>
             <div className="flex flex-wrap justify-center center">
               <div className="youtubePlayer w-100">
                 <ReactPlayer
@@ -21,7 +21,7 @@ const About = ({ onRouteChange, gigData }) => {
                 />
               </div>
               <div className=" youtubeText pa2 ">
-                <p className="white center">
+                <p className="white center pa2">
                   Nomadic Orchestra is a five-piece instrumental dance band
                   based in Cape Town. The primary goal of Nomadic Orchestra is
                   to get people moving. The band makes an infectious kind of

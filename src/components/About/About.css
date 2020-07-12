@@ -3,8 +3,7 @@
 }
 
 .aboutCard {
-  height: auto;
-  max-width: 900px;
+ max-width: 900px;
 }
 
 .youtubeText {
@@ -12,5 +11,4 @@
   height: auto;
 }
 
-.youtubePlayer {
-}
+

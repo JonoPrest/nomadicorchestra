@@ -3,7 +3,7 @@ import 'tachyons';
 import './GigDatesCard.css';
 
 const GigDatesCard = (props) => {
-  const { date, buyTickets, description, image, venue } = props;
+  const { date, buyTickets, description, image, venue, ticketPrice } = props;
 
   // const date = (i) => googleData[i].Date;
   // const buyTickets = (i) => googleData[i].buyTickets;
@@ -26,13 +26,19 @@ const GigDatesCard = (props) => {
               {image.length > 0 && <img alt="" src={image} />}
             </div>
           </div>
-          <a
+          {ticketPrice==="free" ? <a
+            className=" f6 no-underline br-pill ph3 pv2 mb2 dib white bg-green"
+            target="_blank"
+          >
+            Free Entry
+          </a>
+          : <a
             className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate hover-bg-near-black"
             href={buyTickets}
             target="_blank"
           >
             Buy Tickets
-          </a>
+          </a>}
         </div>
       </div>
     </div>
