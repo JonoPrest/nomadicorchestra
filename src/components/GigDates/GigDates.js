@@ -25,7 +25,7 @@ const GigDates = ({ googleData }) => {
                   description={googleData[i].Description}
                   image={googleData[i].Image}
                   buyTickets={googleData[i].buyTickets}
-                  ticketPrice={googleData[i].ticketPrice}
+                  
                   
                 />
               );
