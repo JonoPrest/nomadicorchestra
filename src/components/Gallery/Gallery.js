@@ -45,7 +45,7 @@ const Gallery = () => {
         <div className="carouselContainer ph3">
           <div className="carouselCard cardBG shadow-5 hidden dib br4 center mt3">
             <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">Gallery</h1>
-              <ImageGallery style={{width: "100px"}} items={images} />
+              <ImageGallery items={images} autoPlay = {true} useBrowserFullscreen={false} slideDuration={800}/>
           </div>
         </div>
       </div>
