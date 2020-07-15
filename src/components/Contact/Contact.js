@@ -29,7 +29,7 @@ class Contact extends React.Component {
           },
           (error) => {
             console.log(error.text);
-            that.setState({ emailSubmit: "error" });
+            that.setState({ emailSubmit: "error", loading: "loaded" });
           }
         );
     }
@@ -98,7 +98,6 @@ class Contact extends React.Component {
                     </label>
                     <textarea
                       id="comment"
-                      name="comment"
                       className="border-box hover-black ba shadow-5 b--near-black pa2 mb2"
                       aria-describedby="comment-desc"
                       name="message"
@@ -125,12 +124,12 @@ class Contact extends React.Component {
                     Your message has been sent to us and we will get back to you
                     as soon as we can.
                   </p>
-                  <a
+                  <button
                     className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate pointer hover-bg-near-black ma3"
                     onClick={() => this.setState({ emailSubmit: "waiting" })}
                   >
                     Send another message
-                  </a>
+                  </button>
                 </div>
               </div>
             )}
@@ -154,12 +153,12 @@ class Contact extends React.Component {
                       info@nomadicorchestra.com
                     </a>
                   </div>
-                  <a
+                  <button
                     className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate pointer hover-bg-near-black ma3"
                     onClick={() => this.setState({ emailSubmit: "waiting" })}
                   >
                     Try sending another message
-                  </a>
+                  </button>
                 </div>
               </div>
             )}

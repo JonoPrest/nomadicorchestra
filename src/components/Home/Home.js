@@ -39,57 +39,57 @@ const Home = ({ onRouteChange, route, googleData,}) => {
           )}
           <div className="nav flex justify-between ph3 mt1 ">
             {route !== "homePage" && (
-              <a
+              <button
                 onClick={() => onRouteChange("homePage")}
                 className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black pointer"
               >
                 Home
-              </a>
+              </button>
             )}
 
             {route !== "aboutPage" && (
-              <a
+              <button
                 className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black pointer"
                 onClick={() => onRouteChange("aboutPage")}
               >
                 About
-              </a>
+              </button>
             )}
 
             {route !== "listenPage" && (
-              <a
+              <button
                 className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black pointer"
                 onClick={() => onRouteChange("listenPage")}
               >
                 Listen
-              </a>
+              </button>
             )}
 
             {route !== "contactPage" && (
-              <a
+              <button
                 onClick={() => onRouteChange("contactPage")}
                 className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black pointer"
               >
                 Contact
-              </a>
+              </button>
             )}
 
             {route !== "galleryPage" && (
-              <a
+              <button
                 onClick={() => onRouteChange("galleryPage")}
                 className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black pointer"
               >
                 Gallery
-              </a>
+              </button>
             )}
 
             {route !== "gigDatesPage" && upcomingGigsTotal > 0 && (
-              <a
+              <button
                 onClick={() => onRouteChange("gigDatesPage")}
                 className="navButton ma1 shadow-5 f6 link dim ba  pv2 mb2 dib near-black pointer"
               >
                 Gig Dates
-              </a>
+              </button>
             )}
           </div>
         </div>

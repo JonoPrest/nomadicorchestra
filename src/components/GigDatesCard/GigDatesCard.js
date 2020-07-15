@@ -1,6 +1,6 @@
-import React from 'react';
-import 'tachyons';
-import './GigDatesCard.css';
+import React from "react";
+import "tachyons";
+import "./GigDatesCard.css";
 
 const GigDatesCard = (props) => {
   const { date, buyTickets, description, image, venue } = props;
@@ -18,10 +18,9 @@ const GigDatesCard = (props) => {
         <div className=" pa3">
           <div className=" flex justify-center flex-wrap center">
             <div className=" cardText ma3">
-              <p 
-              className="f6 f5-ns lh-copy measure mv0 white"
-              style={{whiteSpace: "pre-wrap"}}
-
+              <p
+                className="f6 f5-ns lh-copy measure mv0 white"
+                style={{ whiteSpace: "pre-wrap" }}
               >
                 {description}
               </p>
@@ -30,19 +29,25 @@ const GigDatesCard = (props) => {
               {image.length > 0 && <img alt="" src={image} />}
             </div>
           </div>
-          {buyTickets==="free" ? <a
-            className=" f6 no-underline br-pill ph3 pv2 mb2 dib white bg-green"
-            target="_blank"
-          >
-            Free Entry
-          </a>
-          : (buyTickets.length>0 && <a
-                      className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate hover-bg-near-black"
-                      href={buyTickets}
-                      target="_blank"
-                    >
-                      Buy Tickets
-                    </a>)}
+          {buyTickets === "free" ? (
+            <div
+              className=" f6 no-underline br-pill ph3 pv2 mb2 dib white bg-green"
+              target="_blank"
+            >
+              Free Entry
+            </div>
+          ) : (
+            buyTickets.length > 0 && (
+              <a
+                className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate hover-bg-near-black"
+                href={buyTickets}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Buy Tickets
+              </a>
+            )
+          )}
         </div>
       </div>
     </div>

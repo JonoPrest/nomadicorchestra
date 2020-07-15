@@ -1,7 +1,5 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import LoveAtLast from "./LoveAtLast.jpg";
-import MoveYourThings from "./MoveYourThings.jpg";
 import ListenOnSpotify from "./ListenOnSpotifyT.png";
 import ListenOnAppleMusic from "./ListenOnAppleMusicT.png";
 import "./Listen.css";
@@ -17,6 +15,7 @@ const Listen = () => {
                 Madosini
               </h1>
               <iframe
+                title="Madosini"
                 style={{ border: "0", width: "350px", height: "350px" }}
                 src="https://bandcamp.com/EmbeddedPlayer/track=1292036557/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
                 seamless
@@ -41,19 +40,23 @@ const Listen = () => {
                   <a
                     href="https://open.spotify.com/album/10YIVjl4wVBwMgVNeSb4Xn"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       className="listenButtons grow pointer"
                       src={ListenOnSpotify}
+                      alt=""
                     />
                   </a>
                   <a
                     href="https://music.apple.com/za/album/love-at-last/1092836741"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       className="listenButtons grow pointer"
                       src={ListenOnAppleMusic}
+                      alt=""
                     />
                   </a>
                 </div>
@@ -74,19 +77,23 @@ const Listen = () => {
                   <a
                     href="https://open.spotify.com/album/38wVSoZt9hlMJZu8RzDXru"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       className="listenButtons grow pointer"
                       src={ListenOnSpotify}
+                      alt=""
                     />
                   </a>
                   <a
                     href="https://music.apple.com/za/album/move-your-things/651434215"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       className="listenButtons grow pointer"
                       src={ListenOnAppleMusic}
+                      alt=""
                     />
                   </a>
                 </div>
