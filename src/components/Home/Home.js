@@ -41,7 +41,7 @@ const Home = ({ onRouteChange, route, googleData,}) => {
             {route !== "homePage" && (
               <button
                 onClick={() => onRouteChange("homePage")}
-                className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black pointer"
+                className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black b--near-black pointer"
               >
                 Home
               </button>
@@ -49,7 +49,7 @@ const Home = ({ onRouteChange, route, googleData,}) => {
 
             {route !== "aboutPage" && (
               <button
-                className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black pointer"
+                className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black b--near-black pointer"
                 onClick={() => onRouteChange("aboutPage")}
               >
                 About
@@ -58,7 +58,7 @@ const Home = ({ onRouteChange, route, googleData,}) => {
 
             {route !== "listenPage" && (
               <button
-                className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black pointer"
+                className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black b--near-black pointer"
                 onClick={() => onRouteChange("listenPage")}
               >
                 Listen
@@ -68,7 +68,7 @@ const Home = ({ onRouteChange, route, googleData,}) => {
             {route !== "contactPage" && (
               <button
                 onClick={() => onRouteChange("contactPage")}
-                className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black pointer"
+                className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black b--near-black pointer"
               >
                 Contact
               </button>
@@ -77,7 +77,7 @@ const Home = ({ onRouteChange, route, googleData,}) => {
             {route !== "galleryPage" && (
               <button
                 onClick={() => onRouteChange("galleryPage")}
-                className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black pointer"
+                className="navButton ma1 shadow-5 f6 link dim ba ph3 pv2 mb2 near-black b--near-black pointer"
               >
                 Gallery
               </button>
@@ -86,7 +86,7 @@ const Home = ({ onRouteChange, route, googleData,}) => {
             {route !== "gigDatesPage" && upcomingGigsTotal > 0 && (
               <button
                 onClick={() => onRouteChange("gigDatesPage")}
-                className="navButton ma1 shadow-5 f6 link dim ba  pv2 mb2 dib near-black pointer"
+                className="navButton ma1 shadow-5 f6 link dim ba  pv2 mb2 dib near-black b--near-black pointer"
               >
                 Gig Dates
               </button>

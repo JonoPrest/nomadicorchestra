@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: 'Ubuntu-Regular';
   background-color: rgba(242, 242, 242, 0.6);
+  -webkit-text-size-adjust: 100%;
 }
 
 code {

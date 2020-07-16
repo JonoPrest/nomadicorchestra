@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import ListenOnSpotify from "./ListenOnSpotifyT.png";
-import ListenOnAppleMusic from "./ListenOnAppleMusicT.png";
+import ListenButtons from "./listenButtons.js";
 import "./Listen.css";
 
+
 const Listen = () => {
+  const [spotifyLinkState, setSpotifyLinkState] = useState(
+    null
+  );
+  const [appleMusicLinkState, setAppleMusicLinkState] = useState(
+    null
+  );
+  const [targetState, setTargetState] = useState("");
+
+  //Function is a hack to stop android touch from taking you to the link before links are visible
+  const streamingLink = (sLink, aLink) => {
+    setSpotifyLinkState(null);
+    setAppleMusicLinkState(null);
+    setTargetState("");
+    setTimeout(() => {
+      setSpotifyLinkState(sLink);
+      setAppleMusicLinkState(aLink);
+      setTargetState("_blank");
+    }, 500);
+  };
+
   return (
     <div className="backgroundOverlay">
       <div className="contentContainer pt2">
@@ -31,34 +51,23 @@ const Listen = () => {
                 Love At Last
               </h1>
               <div
+                onMouseOver={() =>
+                  streamingLink(
+                    "https://open.spotify.com/album/10YIVjl4wVBwMgVNeSb4Xn",
+                    "https://music.apple.com/za/album/love-at-last/1092836741"
+                  )
+                }
                 id="LoveAtLast"
                 className="Tilt album center shadow-3 link"
                 options={{ max: 20, axis: "x" }}
                 style={{ height: 350, width: 350 }}
               >
                 <div className="hide">
-                  <a
-                    href="https://open.spotify.com/album/10YIVjl4wVBwMgVNeSb4Xn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      className="listenButtons grow pointer"
-                      src={ListenOnSpotify}
-                      alt=""
-                    />
-                  </a>
-                  <a
-                    href="https://music.apple.com/za/album/love-at-last/1092836741"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      className="listenButtons grow pointer"
-                      src={ListenOnAppleMusic}
-                      alt=""
-                    />
-                  </a>
+                  <ListenButtons
+                    spotifyLinkState={spotifyLinkState}
+                    appleMusicLinkState={appleMusicLinkState}
+                    targetState={targetState}
+                  />
                 </div>
               </div>
             </div>
@@ -68,34 +77,23 @@ const Listen = () => {
                 Move Your Things
               </h1>
               <div
+                onMouseOver={() =>
+                  streamingLink(
+                    "https://open.spotify.com/album/38wVSoZt9hlMJZu8RzDXru",
+                    "https://music.apple.com/za/album/move-your-things/651434215"
+                  )
+                }
                 id="MoveYourThings"
                 className="Tilt album center shadow-3 link"
                 options={{ max: 20, axis: "x" }}
                 style={{ height: 350, width: 350 }}
               >
                 <div className="hide">
-                  <a
-                    href="https://open.spotify.com/album/38wVSoZt9hlMJZu8RzDXru"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      className="listenButtons grow pointer"
-                      src={ListenOnSpotify}
-                      alt=""
-                    />
-                  </a>
-                  <a
-                    href="https://music.apple.com/za/album/move-your-things/651434215"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      className="listenButtons grow pointer"
-                      src={ListenOnAppleMusic}
-                      alt=""
-                    />
-                  </a>
+                  <ListenButtons
+                    spotifyLinkState={spotifyLinkState}
+                    appleMusicLinkState={appleMusicLinkState}
+                    targetState={targetState}
+                  />
                 </div>
               </div>
             </div>

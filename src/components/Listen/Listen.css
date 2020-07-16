@@ -34,14 +34,19 @@
   height: 100%;
   padding: 40px;
    background-color: rgba(42, 42, 42, 0.6);
-   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   transition: 0.5s;
 
 
+}
+
+.listenButtonsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .album:hover > .hide {
