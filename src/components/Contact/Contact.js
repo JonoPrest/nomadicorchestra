@@ -1,23 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import ClipLoader from "react-spinners/ClipLoader";
 
 import "./Contact.css";
 
-class Contact extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      emailSubmit: "waiting",
-      loading: "loaded",
-    };
-  }
+const Contact = () => {
 
-  render() {
-    const { emailSubmit, loading } = this.state;
-    const that = this;
+  const [emailSubmit, setEmailSubmit] = useState("waiting");
+  const [loading, setLoading] = useState("loaded");
+
+
+
+  
+   
+
     function sendEmail(e) {
-      that.setState({ loading: "loading" });
+     setLoading("loading");
       e.preventDefault();
 
       emailjs
@@ -25,11 +23,13 @@ class Contact extends React.Component {
         .then(
           (result) => {
             console.log(result.text);
-            that.setState({ emailSubmit: "submitted", loading: "loaded" });
+            setEmailSubmit("submitted")
+            setLoading("loaded");
           },
           (error) => {
             console.log(error.text);
-            that.setState({ emailSubmit: "error", loading: "loaded" });
+            setEmailSubmit("error")
+            setLoading("loaded");
           }
         );
     }
@@ -126,7 +126,7 @@ class Contact extends React.Component {
                   </p>
                   <button
                     className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate pointer hover-bg-near-black ma3"
-                    onClick={() => this.setState({ emailSubmit: "waiting" })}
+                    onClick={() => setEmailSubmit("waiting")}
                   >
                     Send another message
                   </button>
@@ -155,7 +155,7 @@ class Contact extends React.Component {
                   </div>
                   <button
                     className=" f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black-50 bg-animate pointer hover-bg-near-black ma3"
-                    onClick={() => this.setState({ emailSubmit: "waiting" })}
+                    onClick={() => setEmailSubmit("waiting")}
                   >
                     Try sending another message
                   </button>
@@ -166,7 +166,7 @@ class Contact extends React.Component {
         </div>
       </div>
     );
-  }
+  
 }
 
 export default Contact;
