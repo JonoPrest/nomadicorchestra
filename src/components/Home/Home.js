@@ -37,7 +37,7 @@ const Home = ({ onRouteChange, route, googleData,}) => {
               alt=""
             />
           )}
-          <div className="nav flex justify-between ph3 mt1 ">
+          <div className="nav flex justify-between  mt1 ">
             {route !== "homePage" && (
               <button
                 onClick={() => onRouteChange("homePage")}

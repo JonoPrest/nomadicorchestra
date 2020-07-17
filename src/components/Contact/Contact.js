@@ -21,7 +21,7 @@ class Contact extends React.Component {
       e.preventDefault();
 
       emailjs
-        .sendForm("jjprest", "jjprest", e.target, "user_5MUkC4ZCaUbpt4fFPHiYq")
+        .sendForm("nomadicorchestra", "nomadicorchestra", e.target, "user_Jx8Ful3Z2RHyXEgAu93p2")
         .then(
           (result) => {
             console.log(result.text);
