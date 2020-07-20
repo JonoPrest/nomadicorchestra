@@ -39,7 +39,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Home route={route} onRouteChange={onRouteChange} googleData={data} />;
+      <Home route={route} onRouteChange={onRouteChange} googleData={data} />
     </div>
   );
 };
