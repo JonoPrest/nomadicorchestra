@@ -17,8 +17,7 @@ const GigDates = ({ googleData }) => {
             const eventDateTime = eventDate.getTime() + 86400000;
 
             return todayTime <= eventDateTime;
-              
-            
+                         
           }).map((user, i) => {
             return (<GigDatesCard
                               key={i}

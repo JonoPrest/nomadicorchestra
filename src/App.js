@@ -8,7 +8,8 @@ const App = () => {
   const [route, setRoute] = useState("homePage");
 
   //to be used with bandsintown API
-  // const [upcomingDates, setUpcomingDates] = useState(0);
+  const [upcomingDates, setUpcomingDates] = useState(0);
+  const [bandsintownEvents, setBandsintownEvents] = useState([{"venue": {"name": ""}, "artist": {"image_url": ""}}]);
 
   useEffect(() => {
     Tabletop.init({
@@ -18,19 +19,24 @@ const App = () => {
       },
       simpleSheet: true,
     });
-    // fetch("https://rest.bandsintown.com/artists/nomadic%20orchestra/?app_id=754a6e57f49254c4a5509b8d6937c214")
-    // .then(response => response.json())
-    // .then(data => setUpcomingDates(data.upcoming_event_count))
-    // .catch(err => console.log("error fetching artist data from bandsintown"));
-    
-    // fetch("https://rest.bandsintown.com/artists/Tom%20Misch/events/?app_id=754a6e57f49254c4a5509b8d6937c214")
-    // .then(response => response.json())
-    // .then(data => console.log(data))
-    // .catch(err => console.log("error fetching artist data from bandsintown"));
-    // fetch("https://rest.bandsintown.com/artists/Tom%20Misch/?app_id=754a6e57f49254c4a5509b8d6937c214")
-    // .then(response => response.json())
-    // .then(data => console.log(data))
-    // .catch(err => console.log("error fetching artist data from bandsintown"));
+
+    fetch(
+      "https://rest.bandsintown.com/artists/tom%20mish/?app_id=754a6e57f49254c4a5509b8d6937c214"
+    )
+      .then((response) => response.json())
+      .then((data) => setUpcomingDates(data.upcoming_event_count))
+      .catch((err) =>
+        console.log("error fetching artist data from bandsintown")
+      );
+
+    fetch(
+      "https://rest.bandsintown.com/artists/the%20shabs/events/?app_id=754a6e57f49254c4a5509b8d6937c214&date=past"
+    )
+      .then((response) => response.json())
+      .then((data) => setBandsintownEvents(data))
+      .catch((err) =>
+        console.log("error fetching artist data from bandsintown")
+      );
   }, []);
 
   const onRouteChange = (route) => {
@@ -39,7 +45,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <Home route={route} onRouteChange={onRouteChange} googleData={data} />
+      <Home
+        route={route}
+        onRouteChange={onRouteChange}
+        googleData={data}
+        bandsintownData={bandsintownEvents}
+        upcomingDates={upcomingDates}
+      />
     </div>
   );
 };

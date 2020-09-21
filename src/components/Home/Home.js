@@ -5,13 +5,14 @@ import Listen from "../Listen/Listen";
 import Contact from "../Contact/Contact";
 import Gallery from "../Gallery/Gallery";
 import GigDates from "../GigDates/GigDates";
+import GigDatesBandsinTown from "../GigDatesBandsinTown/GigDatesBandsinTown";
 import { SocialIcon } from "react-social-icons";
 
 import "./home.css";
 
-const Home = ({ onRouteChange, route, googleData,}) => {
+const Home = ({ onRouteChange, route, googleData, bandsintownData, upcomingDates }) => {
   
-  let upcomingGigsTotal = 0;
+  let googleSheetDatesTotal = 0;
 
   if (googleData.length > 1) {
     for (let i = 0; i < googleData.length; i++) {
@@ -21,7 +22,7 @@ const Home = ({ onRouteChange, route, googleData,}) => {
       const eventDateTime = eventDate.getTime() + 86400000;
 
       if (todayTime <= eventDateTime) {
-        upcomingGigsTotal += 1;
+        googleSheetDatesTotal += 1;
       }
     }
   }
@@ -83,7 +84,7 @@ const Home = ({ onRouteChange, route, googleData,}) => {
               </button>
             )}
 
-            {route !== "gigDatesPage" && upcomingGigsTotal > 0 && (
+            {route !== "gigDatesPage" && googleSheetDatesTotal > 0 && (
               <button
                 onClick={() => onRouteChange("gigDatesPage")}
                 className="navButton ma1 shadow-5 f6 link dim ba  pv2 mb2 dib near-black b--near-black pointer"
@@ -99,6 +100,7 @@ const Home = ({ onRouteChange, route, googleData,}) => {
         {route === "aboutPage" && <About />}
         {route === "galleryPage" && <Gallery />}
         {route === "gigDatesPage" && <GigDates googleData={googleData} />}
+        {route === "bandsintownDatesPage" && <GigDatesBandsinTown bandsintownData={bandsintownData} />}
 
         <footer className="footer">
           <div className="social flex justify-between">

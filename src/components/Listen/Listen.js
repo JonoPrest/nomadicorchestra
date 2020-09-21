@@ -3,14 +3,9 @@ import ReactPlayer from "react-player";
 import ListenButtons from "./listenButtons.js";
 import "./Listen.css";
 
-
 const Listen = () => {
-  const [spotifyLinkState, setSpotifyLinkState] = useState(
-    null
-  );
-  const [appleMusicLinkState, setAppleMusicLinkState] = useState(
-    null
-  );
+  const [spotifyLinkState, setSpotifyLinkState] = useState(null);
+  const [appleMusicLinkState, setAppleMusicLinkState] = useState(null);
   const [targetState, setTargetState] = useState("");
 
   //Function is a hack to stop android touch from taking you to the link before links are visible
@@ -30,6 +25,32 @@ const Listen = () => {
       <div className="contentContainer pt2">
         <div className="listenContainer">
           <div className="flex flex-wrap justify-around ">
+            <div className="ma2 shadow-5 hidden br4 br--top">
+              <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
+                Hitman
+              </h1>
+              <div
+                onMouseOver={() =>
+                  streamingLink(
+                    "https://open.spotify.com/track/6Sw0HYzCN74V8IvYXAutK2?si=80DqeeKFTVG3zspmhgNfBA",
+                    "https://music.apple.com/tr/album/hitman-single/1525808679"
+                  )
+                }
+                id="Hitman"
+                className="Tilt album center shadow-3 link"
+                options={{ max: 20, axis: "x" }}
+                style={{ height: 350, width: 350 }}
+              >
+                <div className="hide">
+                  <ListenButtons
+                    spotifyLinkState={spotifyLinkState}
+                    appleMusicLinkState={appleMusicLinkState}
+                    targetState={targetState}
+                  />
+                </div>
+              </div>
+            </div>
+
             <div className="ma2 bg-black-30 shadow-5 hidden br4 br--top ">
               <h1 className="f4 cardHeader white mv0 pv2 ph3 br4 br--top">
                 Madosini

@@ -28,6 +28,10 @@
   background-image: url(MoveYourThings.jpg); 
 }
 
+#Hitman {
+  background-image: url(hitman.jpg); 
+}
+
 .hide {
   visibility: hidden;
   width: 100%;
