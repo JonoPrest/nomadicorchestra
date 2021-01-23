@@ -1,73 +1,50 @@
 .listenContainer {
-  width: 80%;
-  min-width: 46rem;
+	width: 80%;
+	min-width: 46rem;
 }
 
 @media only screen and (max-width: 46rem) {
-  .listenContainer {
-    min-width: 30rem;
-  }
+	.listenContainer {
+		min-width: 30rem;
+	}
 }
 
-
-
-
 .albumCard {
-  background-color: rgba(70, 90, 105, 0.7);
+	background-color: rgba(70, 90, 105, 0.7);
 }
 
 .album {
-  background-size: cover;
-}
-
-#LoveAtLast {
-  background-image: url(LoveAtLast.jpg); 
-}
-
-#MoveYourThings {
-  background-image: url(MoveYourThings.jpg); 
-}
-
-#Hitman {
-  background-image: url(hitman.jpg); 
+	background-size: cover;
 }
 
 .hide {
-  visibility: hidden;
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-   background-color: rgba(42, 42, 42, 0.6);
-  opacity: 0;
-  transition: 0.5s;
-
-
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	background-color: rgba(42, 42, 42, 0.6);
+	opacity: 0;
+	transition: 0.5s;
 }
 
 .listenButtonsContainer {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .album:hover > .hide {
-  visibility: visible;
-  opacity: 1;
-  
-  
-
+	visibility: visible;
+	opacity: 1;
 }
 
 .hide:hover {
- 
 }
 
-
-
 .listenButtons {
-  width: 200px;
-  height: 90px;
+	width: 200px;
+	height: 90px;
 }
