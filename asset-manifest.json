@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b8195f3.chunk.css",
-    "main.js": "/static/js/main.1da37786.chunk.js",
-    "main.js.map": "/static/js/main.1da37786.chunk.js.map",
+    "main.css": "/static/css/main.6bba60b6.chunk.css",
+    "main.js": "/static/js/main.d4c10723.chunk.js",
+    "main.js.map": "/static/js/main.d4c10723.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.037b6bc7.js",
     "runtime-main.js.map": "/static/js/runtime-main.037b6bc7.js.map",
     "static/css/2.c2245dfc.chunk.css": "/static/css/2.c2245dfc.chunk.css",
     "static/js/2.780e8f4a.chunk.js": "/static/js/2.780e8f4a.chunk.js",
     "static/js/2.780e8f4a.chunk.js.map": "/static/js/2.780e8f4a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f8ab74c920a20a3951af2f52c9e0ea0a.js": "/precache-manifest.f8ab74c920a20a3951af2f52c9e0ea0a.js",
+    "precache-manifest.5ac8f7c7786b3bd2733f69218c77b049.js": "/precache-manifest.5ac8f7c7786b3bd2733f69218c77b049.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.c2245dfc.chunk.css.map": "/static/css/2.c2245dfc.chunk.css.map",
-    "static/css/main.9b8195f3.chunk.css.map": "/static/css/main.9b8195f3.chunk.css.map",
+    "static/css/main.6bba60b6.chunk.css.map": "/static/css/main.6bba60b6.chunk.css.map",
     "static/js/2.780e8f4a.chunk.js.LICENSE.txt": "/static/js/2.780e8f4a.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/static/media/1.3ba83e67.jpg",
     "static/media/10.jpg": "/static/media/10.a88d8d74.jpg",
@@ -29,7 +29,6 @@
     "static/media/9.jpg": "/static/media/9.b113a815.jpg",
     "static/media/ListenOnAppleMusicT.png": "/static/media/ListenOnAppleMusicT.75746df7.png",
     "static/media/ListenOnSpotifyT.png": "/static/media/ListenOnSpotifyT.48135902.png",
-    "static/media/Listen.css": "/static/media/hitman.663819d6.jpg",
     "static/media/index.css": "/static/media/Ubuntu-Regular.2505bfbd.ttf",
     "static/media/home.css": "/static/media/background-min.af26a5c5.jpg",
     "static/media/logo.png": "/static/media/logo.15b939e6.png",
@@ -39,7 +38,7 @@
     "static/js/runtime-main.037b6bc7.js",
     "static/css/2.c2245dfc.chunk.css",
     "static/js/2.780e8f4a.chunk.js",
-    "static/css/main.9b8195f3.chunk.css",
-    "static/js/main.1da37786.chunk.js"
+    "static/css/main.6bba60b6.chunk.css",
+    "static/js/main.d4c10723.chunk.js"
   ]
 }

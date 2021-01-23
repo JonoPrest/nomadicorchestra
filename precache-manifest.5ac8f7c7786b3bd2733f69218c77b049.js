@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef371c6c89a22676b5b6996ffc849cee",
+    "revision": "994129252722e9e46aec7e1cabb09a66",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.c2245dfc.chunk.css"
   },
   {
-    "revision": "36a8f38a68ad51a29b57",
-    "url": "/static/css/main.9b8195f3.chunk.css"
+    "revision": "986ec97892da5689e0a5",
+    "url": "/static/css/main.6bba60b6.chunk.css"
   },
   {
     "revision": "dea795db0750eb2cf97c",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.780e8f4a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "36a8f38a68ad51a29b57",
-    "url": "/static/js/main.1da37786.chunk.js"
+    "revision": "986ec97892da5689e0a5",
+    "url": "/static/js/main.d4c10723.chunk.js"
   },
   {
     "revision": "1a9834abee69092431f5",
@@ -88,24 +88,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ListenOnSpotifyT.48135902.png"
   },
   {
-    "revision": "eaa43b020519fedcd6630b3a30a337c0",
-    "url": "/static/media/LoveAtLast.eaa43b02.jpg"
-  },
-  {
-    "revision": "2e172f207dc50f1b0919c32dc566b03c",
-    "url": "/static/media/MoveYourThings.2e172f20.jpg"
-  },
-  {
     "revision": "2505bfbd9bde14a7829cc8c242a0d25c",
     "url": "/static/media/Ubuntu-Regular.2505bfbd.ttf"
   },
   {
     "revision": "af26a5c53ff37a2df6398c7fc9f07ed4",
     "url": "/static/media/background-min.af26a5c5.jpg"
-  },
-  {
-    "revision": "663819d673a2aa65034cab487d565234",
-    "url": "/static/media/hitman.663819d6.jpg"
   },
   {
     "revision": "15b939e6960cc040765577d86efe641c",
